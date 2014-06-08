@@ -3,7 +3,8 @@
  1. Reset styles
  2. General styles.
  3. Header styles.
- 4. Slider styles
+ 4. Slider styles.
+ 5. Section "About-us".
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -34,9 +35,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol, ul {
   list-style: none;
 }
@@ -55,10 +53,20 @@ table {
 /*2. General styles*/
 body {
   background: url(../i/markup/bg.png);
+  font-family: 'Myriad Pro',Verdana, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #767676;
 }
 .wrapper {
   width: 1250px;
   margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4em;
 }
 /*3.Header styles*/
 header {
@@ -78,4 +86,18 @@ header {
 .item__img {
   height: auto;
   width: 1250px;
+}
+/* 5.Section "About-us"*/
+.about-us {
+  padding: 60px 0 0 0;
+}
+.about-us h1 {
+  padding: 0 0 55px 0;
+  background: url(../i/markup/bg-header.png) center bottom no-repeat;
+  margin: 0 0 50px 0;
+}
+.about-us p {
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 1.3em;
 }

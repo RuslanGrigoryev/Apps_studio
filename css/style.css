@@ -213,6 +213,7 @@ footer {
 .footer-logo {
     height: 105px;
     float: left;
+    width: 170px;
 }
 footer .wrap-contact {
   padding: 15px 0 0 0;
@@ -224,5 +225,19 @@ footer .wrap-contact {
     left: -90px;
     top: 6px;
 }
-.footer-text {}
-.footer-img {}
+.footer-text {
+    font-size: 0.8em;
+}
+.footer-menu {
+    float: left;
+    margin-left: 110px;
+    padding: 10px 0 0 0;
+}
+.footer-menu__list {
+    height: 90px;
+    float: left;
+    margin-right: 70px;
+}
+.footer-menu__item {
+    list-style: disc;
+}

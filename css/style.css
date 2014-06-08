@@ -241,3 +241,29 @@ footer .wrap-contact {
 .footer-menu__item {
     list-style: disc;
 }
+.social-list {
+    height: 70px;
+    float: right;
+    width: 300px;
+    margin: 0 150px 0 0;
+    padding: 15px 0 0 0;
+}
+.social-list__item {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.social-list__link {
+    display: block;
+    height: 50px;
+    background: url(../i/markup/sprite-social.png) no-repeat;
+}
+.social-list__link--twitter {
+    background-position: 0px -50px;
+}
+.social-list__link--vk {
+    background-position: 0px -100px;
+}
+.social-list__link--facebook {
+    background-position: 0px -150px;
+}

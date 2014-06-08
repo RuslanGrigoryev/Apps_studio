@@ -92,6 +92,12 @@ header {
   padding: 60px 0 0 0;
 }
 .about-us h1 {
+  background: -webkit-linear-gradient(#bab8b8, #5e5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-us span {
+  display: block;
   padding: 0 0 55px 0;
   background: url(../i/markup/bg-header.png) center bottom no-repeat;
   margin: 0 0 50px 0;

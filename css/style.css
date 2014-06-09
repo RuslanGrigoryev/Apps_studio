@@ -256,6 +256,14 @@ header {
   height: 135px;
   background: url(../i/markup/bg-text-block.png) no-repeat;
   margin: 30px auto 10px;
+  padding: 0px;
+}
+.wrap-goal-text p {
+  font-size: 0.9em;
+  margin: 0px;
+  text-align: justify;
+  line-height: 1.2em;
+  padding: 10px 15px;
 }
 .goals-image__analitic {
     background-position: -44px 0px;

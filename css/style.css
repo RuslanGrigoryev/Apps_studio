@@ -212,7 +212,6 @@ header {
 }
 .goals .wrapper {
   background: url(../i/markup/bg-goals-wrapper.png) 0px 0px no-repeat;
-  height: 410px;
   padding: 40px 0 0 0;
 }
 .left{
@@ -229,7 +228,6 @@ header {
 }
 .goals-image {
     height: 200px;
-
     width: 200px;
     background: url(../i/markup/sprite-goals.png) no-repeat;
     margin: 0 auto;
@@ -253,9 +251,6 @@ footer .wrap-contact {
   padding: 15px 0 0 0;
   height: 60px;
   position: relative;
-}
-footer .wrapper {
-  height: 105px;
 }
 .footer-phone {
     position: absolute;
@@ -303,5 +298,4 @@ footer .wrapper {
 }
 .social-list__link--facebook {
     background-position: 0px -150px;
-}px;
 }

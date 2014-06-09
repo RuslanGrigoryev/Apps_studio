@@ -212,18 +212,32 @@ header {
 }
 .goals .wrapper {
   background: url(../i/markup/bg-goals-wrapper.png) 0px 0px no-repeat;
-  height: 450px;
+  height: 410px;
+  padding: 40px 0 0 0;
 }
 .left{
    float: left;
    margin-right: 10px;
    width: 305px;
    height: 460px;
+   text-align: center;
 }
 .right{
    float: right;
    width: 305px;
+   text-align: center;
 }
+.goals-image {
+    height: 200px;
+
+    width: 200px;
+    background: url(../i/markup/sprite-goals.png) no-repeat;
+    margin: 0 auto;
+}
+.goals-image__analitic {}
+.goals-image__project {}
+.goals-image__develop {}
+.goals-image__techno {}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;
@@ -239,6 +253,9 @@ footer .wrap-contact {
   padding: 15px 0 0 0;
   height: 60px;
   position: relative;
+}
+footer .wrapper {
+  height: 105px;
 }
 .footer-phone {
     position: absolute;
@@ -286,4 +303,5 @@ footer .wrap-contact {
 }
 .social-list__link--facebook {
     background-position: 0px -150px;
+}px;
 }

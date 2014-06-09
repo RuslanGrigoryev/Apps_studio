@@ -54,6 +54,11 @@ table {
   border-spacing: 0;
 }
 /*2. General styles*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   background: url(../i/markup/bg.png);
   font-family: 'Myriad Pro',Verdana, Arial, sans-serif;
@@ -330,8 +335,56 @@ header {
 /*8. PAGE HOW IT WORKS Section header-img*/
 .header-img .wrapper {
     background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat;
-  
 }
+.work-details {}
+.work-details__item {
+    float: left;
+}
+.work-details__item__wrap {
+    width: 304px;
+    height: 201px;
+    position: relative;
+    background: url(../i/markup/bg-works.png) no-repeat;
+}
+.work-details__item__wrap--after {
+    margin: 0 168px 40px 0;
+}
+.work-details__item__wrap--after:after {
+  content: " ";
+  position: absolute;
+  width: 49px;
+  height: 29px;
+  right: -49px;
+  top: 43%;
+  background: url(../i/markup/works-after-arrow.png) no-repeat;
+}
+.work-details__item__inner {
+    padding: 10px 10px 0px 80px;
+}
+.work-details__item__inner strong {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #c7c7c7;
+  margin: 0 0 10px 0;
+  display: block;
+}
+.work-details__item__inner p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #8f8e8e;
+  line-height: 1.3em;
+}
+.work-details__item__inner--connection {}
+.work-details__item__inner--logic {}
+.work-details__item__inner--mockup {}
+.work-details__item__inner--agrees {}
+.work-details__item__inner--contract {}
+.work-details__item__inner--development {}
+.work-details__item__inner--app {}
+.work-details__item__inner--release {}
+.work-details__item__inner--support {}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

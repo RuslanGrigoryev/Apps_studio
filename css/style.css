@@ -7,6 +7,7 @@
  5. Section "About-us".
  6. Section "Goals".
  7. Section Call styles.
+ 8. PAGE HOW IT WORKS Section header-img.
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -80,6 +81,20 @@ h1 {
 }
 h2 {
   text-transform: uppercase;
+}
+.about-us h1, .how_it_work h1 {
+  background: -webkit-linear-gradient(#bab8b8, #5e5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-us span , .how_it_work span{
+  display: block;
+  padding: 0 0 55px 0;
+  background: url(../i/markup/bg-header.png) center bottom no-repeat;
+  margin: 0 0 50px 0;
+}
+.about-us, .how_it_work {
+  padding: 60px 0 0 0;
 }
 /*3.Header styles*/
 header {
@@ -186,20 +201,6 @@ header {
   width: 1250px;
 }
 /* 5.Section "About-us"*/
-.about-us {
-  padding: 60px 0 0 0;
-}
-.about-us h1 {
-  background: -webkit-linear-gradient(#bab8b8, #5e5d5d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.about-us span {
-  display: block;
-  padding: 0 0 55px 0;
-  background: url(../i/markup/bg-header.png) center bottom no-repeat;
-  margin: 0 0 50px 0;
-}
 .about-us p {
   font-size: 1.3em;
   text-align: center;
@@ -325,6 +326,11 @@ header {
     position: absolute;
     bottom: -65px;
     left: 16%;
+}
+/*8. PAGE HOW IT WORKS Section header-img*/
+.header-img .wrapper {
+    background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat;
+  
 }
 /*23. Footer styles*/
 footer {

@@ -5,7 +5,8 @@
  3. Header styles.
  4. Slider styles.
  5. Section "About-us".
- 6. Section "Goals"
+ 6. Section "Goals".
+ 7. Section Call styles.
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -206,7 +207,7 @@ header {
 }
 /*6. Section "Goals"*/
 .goals {
-  min-height: 600px;
+  min-height: 520px;
   margin: 50px 0 0 0;
   background: url(../i/markup/bg-goals.png) no-repeat;
   background-size: 100% 100%;
@@ -276,6 +277,54 @@ header {
 }
 .goals-image__techno {
     background-position: -947px 0;
+}
+/*7. Section Call styles*/
+.call {
+    min-height: 420px;
+    padding: 40px 0 0 0;
+}
+.call__text {
+    width: 31%;
+    float: left;
+    background: url(../i/markup/bg-call-text.png) center no-repeat;
+    height: 343px;
+    padding: 20px 70px 20px 50px;
+}
+.call__text strong {
+  text-transform: uppercase;
+  color: #767676;
+  font-size: 1.1em;
+  padding: 25px 0;
+  line-height: 1.2em;
+  display: inline-block;
+  background: url(../i/markup/bg-call-strong-divider.png) center bottom no-repeat;
+}
+.call__text p {
+  font-size: 1.1em;
+  color: #505050;
+  padding: 20px 0 0 0;
+}
+.call__btn {
+    width: 49%;  
+    float: right;
+    height: 343px;
+    background: url(../i/markup/apple-icon.png) center top no-repeat;
+    position: relative;
+}
+.call__btn button {
+    width: 421px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    height: 107px;
+    background: url(../i/markup/bg-btn.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.9em;
+    position: absolute;
+    bottom: -65px;
+    left: 16%;
 }
 /*23. Footer styles*/
 footer {

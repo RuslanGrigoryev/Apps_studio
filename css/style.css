@@ -83,22 +83,20 @@ h1 {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.4em;
-}
-h2 {
-  text-transform: uppercase;
-}
-.about-us h1, .how_it_work h1 {
   background: -webkit-linear-gradient(#bab8b8, #5e5d5d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about-us span , .how_it_work span{
+h1 span {
   display: block;
   padding: 0 0 55px 0;
   background: url(../i/markup/bg-header.png) center bottom no-repeat;
   margin: 0 0 50px 0;
 }
-.about-us, .how_it_work {
+h2 {
+  text-transform: uppercase;
+}
+.about-us, .how_it_work, .why_it_work {
   padding: 60px 0 0 0;
 }
 /*3.Header styles*/
@@ -345,9 +343,10 @@ header {
     height: 201px;
     position: relative;
     background: url(../i/markup/bg-works.png) no-repeat;
+    margin-left: 78px;
 }
-.work-details__item__wrap--after {
-    margin: 0 168px 40px 0;
+.work-details__item__wrap.work-details__item__wrap--after {
+    margin: 0 59px 40px 70px;
 }
 .work-details__item__wrap--after:after {
   content: " ";
@@ -360,6 +359,39 @@ header {
 }
 .work-details__item__inner {
     padding: 10px 10px 0px 80px;
+}
+.work-details__item__inner:after {
+  content: " ";
+  width: 181px;
+  height: 181px;
+  position: absolute;
+  left: -95px;
+  top: 5%;
+  background: url(../i/markup/sprite-principles.png) no-repeat;
+}
+.work-details__item__inner--logic:after {
+  background-position: -200px 0px;
+}
+.work-details__item__inner--mockup:after {
+  background-position: -421px 0px;
+}
+.work-details__item__inner--agrees:after {
+  background-position: -636px 0px;
+}
+.work-details__item__inner--contract:after {
+  background-position: -868px 0px;
+}
+.work-details__item__inner--development:after {
+  background-position: -1114px 0px;
+}
+.work-details__item__inner--app:after {
+  background-position: -1348px 0px;
+}
+.work-details__item__inner--release:after {
+  background-position: -1594px 0px;
+}
+.work-details__item__inner--support:after {
+  background-position: -1829px 0px;
 }
 .work-details__item__inner strong {
   font-family: 'Roboto', sans-serif;

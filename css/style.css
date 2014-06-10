@@ -1,17 +1,20 @@
 /* 
   ORDER 
  1. Reset styles
- 2. General styles.
- 3. Header styles.
- 4. Slider styles.
- 5. Section "About-us".
- 6. Section "Goals".
- 7. Section Call styles.
- 8. PAGE HOW IT WORKS Section header-img.
- 9.                   Section how_it_work styles
- 10.                  Section why_it_work styles
- 11.                  Section business    styles   
- 12. PAGE SOLUTIONS   Section classification styles
+ 2.  PAGE INDEX        General styles.
+ 3.                    Header styles.
+ 4.                    Slider styles.
+ 5.                    Section "About-us".
+ 6.                    Section "Goals".
+ 7.                    Section Call styles.
+ 8.  PAGE HOW IT WORKS Section header-img.
+ 9.                    Section how_it_work styles
+ 10.                   Section why_it_work styles
+ 11.                   Section business    styles   
+ 12. PAGE SOLUTIONS    Section classification styles
+ 13. PAGE WE-ARE       Section we-are styles
+ 14.                   Section clients styles
+ 15.                   Section partners styles
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -100,7 +103,7 @@ h1 span {
 h2 {
   text-transform: uppercase;
 }
-.about-us, .how_it_work, .why_it_work, .business {
+.about-us, .how_it_work, .why_it_work, .business, .we-are, .clients, .partners {
   padding: 60px 0 0 0;
 }
 /*3.Header styles*/
@@ -579,6 +582,122 @@ header {
   vertical-align: middle;
   display: table-cell;
 }
+/*13. Section we-are styles*/
+.we-are p {
+    font-size: 1.2em;
+  
+    margin: 0 0 40px 0;
+    padding: 0 50px;
+}
+/*14. Section clients styles*/
+.clients-list {}
+.clients-list__item {
+    float: left;
+    margin: 0 34px 20px 34px;
+}
+.clients-list__item__link {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background: url(../i/markup/sprite-clients.png) no-repeat;
+}
+.clients-list__item__link--spa {
+    background-position: -9px -8px;
+}
+.clients-list__item__link--clever {
+    background-position: -160px -8px;
+}
+.clients-list__item__link--three {
+    background-position: -309px -8px;
+}
+.clients-list__item__link--roll {
+    background-position: -459px -8px;
+}
+.clients-list__item__link--anti-taxi {
+    background-position: -609px -8px;
+}
+.clients-list__item__link--taxi {
+    background-position: -759px -8px;
+}
+.clients-list__item__link--key {
+    background-position: -909px -8px;
+}
+.clients-list__item__link--twit {
+    background-position: -9px -168px;
+}
+.clients-list__item__link--party {
+    background-position: -159px -168px;
+}
+.clients-list__item__link--stone {
+    background-position: -309px -168px;
+}
+.clients-list__item__link--gds {
+    background-position: -459px -168px;
+}
+.clients-list__item__link--bedroom {
+    background-position: -609px -168px;
+}
+.clients-list__item__link--numone {
+    background-position: -909px -168px;
+}
+.clients-list__item__link--tax {
+    background-position: -759px -168px;
+}
+.clients-list__item__link--spa:hover {
+    background-position: -10px -321px;
+}
+.clients-list__item__link--clever:hover {
+    background-position: -159px -321px;
+}
+.clients-list__item__link--three:hover {
+    background-position: -309px -321px;
+}
+.clients-list__item__link--roll:hover {
+    background-position: -459px -321px;
+}
+.clients-list__item__link--anti-taxi:hover {
+    background-position: -609px -321px;
+}
+.clients-list__item__link--taxi:hover {
+    background-position: -759px -321px;
+}
+.clients-list__item__link--key:hover {
+    background-position: -909px -321px;
+}
+.clients-list__item__link--twit:hover {
+    background-position: -9px -481px;
+}
+.clients-list__item__link--party:hover {
+    background-position: -159px -481px;
+}
+.clients-list__item__link--stone:hover {
+    background-position: -309px -481px;
+}
+.clients-list__item__link--gds:hover {
+    background-position: -459px -481px;
+}
+.clients-list__item__link--bedroom:hover {
+    background-position: -609px -481px;
+}
+.clients-list__item__link--numone:hover {
+    background-position: -909px -481px;
+}
+.clients-list__item__link--tax:hover {
+    background-position: -759px -481px;
+}
+/*15. Section partners styles*/
+.partners-list {
+    text-align: center;
+
+    margin: 0 0 60px 0;
+}
+.partners-list__item {
+    display: inline-block;
+}
+.partners-list__item__link {
+    display: block;
+}
+.partners-list__item__link__img {}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

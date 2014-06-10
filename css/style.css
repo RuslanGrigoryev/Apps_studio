@@ -8,6 +8,9 @@
  6. Section "Goals".
  7. Section Call styles.
  8. PAGE HOW IT WORKS Section header-img.
+ 9.                   Section how_it_work styles
+ 10.                  Section why_it_work styles
+ 11.                  Section business    styles   
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -96,7 +99,7 @@ h1 span {
 h2 {
   text-transform: uppercase;
 }
-.about-us, .how_it_work, .why_it_work {
+.about-us, .how_it_work, .why_it_work, .business {
   padding: 60px 0 0 0;
 }
 /*3.Header styles*/
@@ -173,12 +176,18 @@ header {
     position: relative;
     text-transform: uppercase;
 }
-.main-menu__link:hover {
+.main-menu__link:hover, .main-menu__link--active {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   text-decoration: none;
+  background: -webkit-linear-gradient(#666464, #9634e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-menu__link:hover:after, .main-menu__link.main-menu__link--active:after {
+  background: url(../i/markup/bg-main-menu-hover.png) -17px -4px no-repeat;
 }
 .main-menu__link:after {
   content: "";
@@ -334,7 +343,7 @@ header {
 .header-img .wrapper {
     background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat;
 }
-.work-details {}
+/*9.Section how_it_work styles */
 .work-details__item {
     float: left;
 }
@@ -401,22 +410,145 @@ header {
   margin: 0 0 10px 0;
   display: block;
 }
-.work-details__item__inner p {
+.work-details__item__inner p, .why_it_work__head-text, .why_it_work__wrap-ul__list__item p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 0.7em;
   color: #8f8e8e;
   line-height: 1.3em;
 }
-.work-details__item__inner--connection {}
-.work-details__item__inner--logic {}
-.work-details__item__inner--mockup {}
-.work-details__item__inner--agrees {}
-.work-details__item__inner--contract {}
-.work-details__item__inner--development {}
-.work-details__item__inner--app {}
-.work-details__item__inner--release {}
-.work-details__item__inner--support {}
+/*10.Section why_it_work styles */
+.why_it_work__head-text {
+  text-transform: uppercase;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 1em;
+}
+.why_it_work__wrap-ul {
+    margin: 50px 0;
+}
+.why_it_work__wrap-ul__list {
+    width: 45%;
+    display: inline-block;
+    margin: 0 0 0 50px;
+    vertical-align: top;
+}
+.why_it_work__wrap-ul__list__item {
+    margin: 0 0 0px 0;
+    min-height: 150px;
+}
+.why_it_work__wrap-ul__list__item h3 {
+    color: #b32cd7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.why_it_work__wrap-ul__list__item p {
+    font-size: 1.1em;
+}
+/*11.Section business styles*/
+.business-list-wrap {
+    margin: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.business-list {
+    width: 39%;
+    margin: 0 67px;
+    display: inline-block;
+}
+.business-list:first-child .business-list__item {
+  text-align: right;
+}
+.business-list__item {
+    margin: 15px 0;
+    padding: 0 10px;
+    position: relative;
+}
+.business-list__left-side .business-list__item:after {
+  content: " ";
+  position: absolute;
+  right: -40px;
+  top: 9%;
+  width: 35px;
+  height: 30px;
+  background: url(../i/markup/sprite-business.png) 3px -1px no-repeat;
+}
+.business-list__right-side .business-list__item:before {
+  content: " ";
+  position: absolute;
+  left: -40px;
+  top: 0%;
+  width: 35px;
+  height: 30px;
+  background: url(../i/markup/sprite-business.png) no-repeat;
+}
+.business-list__left-side .business-list__item__caffee:after {
+    background-position: -38px 2px;
+}
+.business-list__left-side .business-list__item__saloon:after {
+    background-position: -79px -2px;
+}
+.business-list__left-side .business-list__item__butiq:after {
+    background-position: -116px -1px;
+}
+.business-list__left-side .business-list__item__optik:after {
+    background-position: -154px -1px;
+}
+.business-list__left-side .business-list__item__avia:after {
+    background-position: -197px -1px;
+}
+.business-list__left-side .business-list__item__shop:after {
+    background-position: -248px -2px;
+}
+.business-list__left-side .business-list__item__smi:after {
+    background-position: -293px -3px;
+}
+.business-list__left-side .business-list__item__mebel:after {
+    background-position: -333px -1px;
+}
+.business-list__left-side .business-list__item__bank:after {
+    background-position: -371px -1px;
+}
+.business-list__left-side .business-list__item__security:after {
+    background-position: -414px -1px;
+}
+.business-list__right-side .business-list__item__tourist:before {
+    background-position: 0px -37px;
+}
+.business-list__right-side .business-list__item__boul:before {
+    background-position: -34px -37px;
+}
+.business-list__right-side .business-list__item__cinema:before {
+    background-position: -70px -37px;
+}
+.business-list__right-side .business-list__item__sto:before {
+    background-position: -109px -37px;
+}
+.business-list__right-side .business-list__item__goods:before {
+    background-position: -145px -37px;
+}
+.business-list__right-side .business-list__item__flowers:before {
+    background-position: -182px -37px;
+}
+.business-list__right-side .business-list__item__bar:before {
+    background-position: -222px -37px;
+}
+.business-list__right-side .business-list__item__clean:before {
+    background-position: -253px -37px;
+}
+.business-list__right-side .business-list__item__digit:before {
+    background-position: -287px -37px;
+}
+.business-list__right-side .business-list__item__super:before {
+    background-position: -321px -37px;
+}
+.business-list__right-side .business-list__item__distr:before {
+    background-position: -363px -33px;
+}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

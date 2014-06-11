@@ -1,20 +1,21 @@
 /* 
   ORDER 
  1. Reset styles
- 2.  PAGE INDEX        General styles.
- 3.                    Header styles.
- 4.                    Slider styles.
- 5.                    Section "About-us".
- 6.                    Section "Goals".
- 7.                    Section Call styles.
- 8.  PAGE HOW IT WORKS Section header-img.
- 9.                    Section how_it_work styles
- 10.                   Section why_it_work styles
- 11.                   Section business    styles   
- 12. PAGE SOLUTIONS    Section classification styles
- 13. PAGE WE-ARE       Section we-are styles
- 14.                   Section clients styles
- 15.                   Section partners styles
+ 2.  PAGE INDEX         General styles.
+ 3.                     Header styles.
+ 4.                     Slider styles.
+ 5.                     Section "About-us".
+ 6.                     Section "Goals".
+ 7.                     Section Call styles.
+ 8.  PAGE HOW IT WORKS  Section header-img.
+ 9.                     Section how_it_work styles
+ 10.                    Section why_it_work styles
+ 11.                    Section business    styles   
+ 12. PAGE SOLUTIONS     Section classification styles
+ 13. PAGE WE-ARE        Section we-are styles
+ 14.                    Section clients styles
+ 15.                    Section partners styles
+ 16. PAGE HOW IT WORKS2 Section header-img.
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -688,7 +689,6 @@ header {
 /*15. Section partners styles*/
 .partners-list {
     text-align: center;
-
     margin: 0 0 60px 0;
 }
 .partners-list__item {
@@ -697,7 +697,74 @@ header {
 .partners-list__item__link {
     display: block;
 }
-.partners-list__item__link__img {}
+/* 16. PAGE HOW IT WORKS2 Section header-img. */
+.punkt-list {
+    padding: 0 0 0 100px;
+}
+.punkt-list__item {
+    margin: 0 0 40px 0;
+}
+.punkt-list__img {
+    width: 196px;
+    height: 196px;
+    display: inline-block;
+    background: url(../i/markup/sprite-works2.png) no-repeat;
+}
+.punkt-list__img__idea {
+    background-position: 0px -3px;
+}
+.punkt-list__img__strat {
+    background-position: -220px -3px;
+}
+.punkt-list__img__uxui {
+    background-position: -451px -3px;
+}
+.punkt-list__img__support {
+    background-position: -680px -3px;
+}
+.punkt-list__img__seo {
+    background-position: -900px -3px;
+}
+.punkt-list__img__partner {
+    background-position: -1147px -3px;
+}
+.punkt-list__wrap-text {
+    display: inline-table;
+    position: relative;
+    vertical-align: 90px;
+    background: url(../i/markup/bg-how-it-works2.png) no-repeat;
+    width: 825px;
+    height: 149px;
+    margin: 0 0 0 20px;
+}
+.punkt-list__wrap-text p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding: 0 0 0 85px;
+}
+.punkt-list__link {
+    position: absolute;
+    top: 45px;
+    text-transform: uppercase;
+    right: 20px;
+    font-size: 0.6em;
+    color: #494747;
+    text-align: center;
+    width: 100px;
+    padding: 0 0 10px 0;
+    height: 50px;
+    background: url(../i/markup/detail-link.png) 0px 13px no-repeat;
+}
+.punkt-list__link:hover {
+  text-decoration: none;
+} 
+.punkt-list__item--inner {
+    display: none;
+}
+.punkt-list__item--inner__item {}
+.punkt-list__item--inner__item h4 {}
+.punkt-list__item--inner__item p {}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

@@ -762,9 +762,30 @@ header {
 .punkt-list__item--inner {
     display: none;
 }
-.punkt-list__item--inner__item {}
-.punkt-list__item--inner__item h4 {}
-.punkt-list__item--inner__item p {}
+.punkt-list__item--inner {
+  background: url(../i/markup/bg-inner-list.png) no-repeat;
+  margin: 0 92px 0 10px;
+  height: 322px;
+  padding: 100px 0 0;
+  position: relative;
+  top: -71px;
+  left: -12px;
+}
+.punkt-list__item--inner__item {
+    padding: 0 5px;
+    list-style: disc;
+    margin: 20px 40px 40px 60px;
+    color: #a3a3a3;
+}
+.punkt-list__item--inner__item h4 {
+    font-size: 1.3em;
+    margin: 0 0 30px 0;
+}
+.punkt-list__item--inner__item p {
+    color: #595959;
+    font-size: 1em;
+    font-style: italic;
+}
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

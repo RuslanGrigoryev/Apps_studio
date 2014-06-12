@@ -18,7 +18,8 @@
  16. PAGE HOW IT WORKS2 Section header-img.
  17. PAGE CONTACTS      Contacts.
  18. PAGE PORTFOLIO     portfolio-works
- 19. PAGE SOLUTIONS2    
+ 19. PAGE SOLUTIONS2    clients-punkt-list
+ 20. PAGE SOLUTIONS2    simple-text section styles
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -134,6 +135,11 @@ input {
 }
 .map-wrap {
   height: 330px;
+}
+.gradient {
+  background: -webkit-linear-gradient(#666464, #c3c1c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*3.Header styles*/
 header {
@@ -910,13 +916,70 @@ header {
   left: 33%;
   bottom: -18px;
   margin: 0px auto;
-  /* position: relative; */
   text-transform: uppercase;
   text-align: center;
   background: url(../i/markup/bg-more-link.png) center center no-repeat;
   box-sizing: border-box;
   padding: 31px 0;
   color: #fff;
+}
+/*19 clients-punkt-list*/
+.clients-punkt-list strong{
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #767676;
+  padding: 0 0 30px 0;
+  background: url(../i/markup/bg-line-solutions2.png) left bottom no-repeat;
+  display: block;
+}
+.clients-punkt-list em {
+  font-style: italic;
+  font-size: 22px;
+  margin: 30px 0 0 0;
+  display: block;
+}
+.clients-punkt-list .punkt-list__wrap-text {
+    height: 296px;
+    background-size: 100% 100%;
+    width: 563px;
+    background: url(../i/markup/bg-solutions2-punkts.png) no-repeat;
+}
+.clients-punkt-list {
+  padding: 0 0 0 20px;
+}
+.clients-punkt-list p {
+  padding: 30px 0 0 30px;
+  vertical-align: top;
+}
+.clients-punkt-list .punkt-list__item {
+    float: left;
+    margin-right: 30px;
+}
+.clients-punkt-list .punkt-list__link {
+    bottom: 13px;
+    right: 41%;
+    top: inherit;
+}
+.punkt-list__link--active {
+  background: url(../i/markup/detail-link--active.png) center no-repeat;
+}
+/*20. Secttion simple-text styles*/
+.simple-text {
+    margin: 0 0 50px 0;
+}
+.simple-text-wrap {}
+.first {
+    padding: 0 0 0 40px;
+    margin: 0 0 20px 0;
+    line-height: 1.3em;
+}
+.simple-text-wrap-list {
+    padding: 0 0 0 80px;
+}
+.simple-text-wrap-item {
+    list-style: disc;
+    margin: 0 0 6px 0;
+    line-height: 1.3em;
 }
 /*23. Footer styles*/
 footer {

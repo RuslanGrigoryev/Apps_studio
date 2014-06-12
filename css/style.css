@@ -871,7 +871,7 @@ header {
     margin: 0 70px 70px 0;
     position: relative;
     text-align: center;
-    width: 326px;
+    width: 325px;
     background: url(../i/markup/bg-portfolio-works.png) center center no-repeat;
     height: 415px;
     padding: 0 0 10px 0;
@@ -882,10 +882,13 @@ header {
 .portfolio-list__item img {
     display: block;
     margin: 0 auto;
+    padding: 12px 0 0 0;
+    width: 296px;
+    height: 358px;
 }
 .portfolio-list__item strong {
     display: block;
-    margin: 20px 0 0 0;
+    margin: 50px 0 0 0;
     padding: 5px 0;
     text-transform: uppercase;
     background: url(../i/markup/bg-goals-header.png) center 6px no-repeat;

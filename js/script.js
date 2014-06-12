@@ -28,5 +28,28 @@ $(function() {
         $parent.toggleClass('punkt-list__item--inner--active');
     });
 
+
+    /*Slide item on solutions2.html*/
+
+    var $clientsLink       = $('.clients-link'), 
+        $clientsLinkInner  = $('.clients-link--inner'),
+        $open              = false;
+
+        $clientsLink.on('click', function (e) {
+            e.preventDefault();
+            
+            var $self          = $(this),
+                $currDataInner = $self.data('inner');
+
+            $('.clients-link--inner').hide();
+
+            $('.clients-link--inner').each(function( index ) {
+                var $temp = $(this).data('inner');
+                if ($temp == $currDataInner) {
+                    $(this).show();
+                    $self.addClass('punkt-list__link--active');
+                }
+            });
+        });
 });
 

@@ -12,14 +12,14 @@
 	    function initialize() {
 	      var mapOptions = {
 	        zoom: 5,
-	        center: new google.maps.LatLng(54, 37)
+	        center: new google.maps.LatLng(53, 35)
 	      }
 	      var map = new google.maps.Map(document.getElementById('map_canvas'),
 	                                    mapOptions);
 
 	      var image = 'i/markup/flag.png';
 	      var myLatLng = new google.maps.LatLng(54.564366, 34.482806);
-	      var beachMarker = new google.maps.Marker({
+	      var beachMarkerMoscow = new google.maps.Marker({
 	          position: myLatLng,
 	          map: map,
 	          icon: image
@@ -30,6 +30,14 @@
 	          map: map,
 	          icon: image
 	      });
+	      google.maps.event.addListener(beachMarkerMoscow, 'click', function() {
+	          map.setZoom(8);
+	        });
+
+	      google.maps.event.addListener(beachMarkerKiev, 'click', function() {
+	          map.setZoom(8);
+	        });
+
 	    }
 	    </script>
 </head>

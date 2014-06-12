@@ -974,6 +974,9 @@ header {
 .clients-link--inner .punkt-list__item--inner__item p {
   padding: 5px;
 }
+.clients-link--innner--left {
+  background: url(../i/markup/bg-inner-list-left.png) no-repeat;
+}
 /*20. Secttion simple-text styles*/
 .simple-text {
     margin: 0 0 50px 0;

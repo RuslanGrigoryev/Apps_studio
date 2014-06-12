@@ -37,17 +37,18 @@ $(function() {
 
         $clientsLink.on('click', function (e) {
             e.preventDefault();
-            
+
             var $self          = $(this),
                 $currDataInner = $self.data('inner');
 
-            $('.clients-link--inner').hide();
 
             $('.clients-link--inner').each(function( index ) {
                 var $temp = $(this).data('inner');
                 if ($temp == $currDataInner) {
-                    $(this).show();
-                    $self.addClass('punkt-list__link--active');
+                    $clientsLinkInner.not($(this)).hide();
+                    $clientsLink.not($self).removeClass('punkt-list__link--active');
+                    $(this).slideToggle();
+                    $self.toggleClass('punkt-list__link--active');
                 }
             });
         });

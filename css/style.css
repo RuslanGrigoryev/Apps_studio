@@ -17,6 +17,7 @@
  15.                    Section partners styles
  16. PAGE HOW IT WORKS2 Section header-img.
  17. PAGE CONTACTS      Contacts.
+ 18. PAGE PORTFOLIO     portfolio-works
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -844,6 +845,7 @@ header {
   margin: 20px 0 10px 0;
   color: #676767;
 }
+/*18.portfolio-works*/
 /*23. Footer styles*/
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;

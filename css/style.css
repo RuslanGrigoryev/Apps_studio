@@ -21,6 +21,7 @@
  19. PAGE SOLUTIONS2        clients-punkt-list
  20. PAGE SOLUTIONS2        simple-text section styles
  21. PAGE PORTFOLIO-WORK    portfolio-head__work styles
+ 22.                        wrap-buttons styles
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -90,6 +91,7 @@ a:hover {
   width: 1250px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 h1 {
   text-align: center;
@@ -865,7 +867,7 @@ header {
   margin: 0 0 40px 0;
   background: url(../i/markup/bg-portfolio.png) top center no-repeat;
   background-size: 100% 100%;
-  min-height: 1550px;
+  min-height: 350px;
 }
 .portfolio-works .wrapper{
   padding: 40px 60px;
@@ -996,16 +998,35 @@ header {
     line-height: 1.3em;
 }
 .simple-text-wrap-list {
-    padding: 0 0 0 80px;
+    padding: 0 0 0 130px;
 }
 .simple-text-wrap-item {
     list-style: disc;
     margin: 0 0 6px 0;
     line-height: 1.3em;
+    text-align: left;
 }
 /*21. portfolio-head__work styles */
+.portfolio-head__work {
+  padding: 30px 0 0 0;
+}
 .portfolio-head__work span {
   text-transform: none;
+}
+/*22. wrap-buttons styles*/
+.wrap-buttons {
+  margin: 0 0 40px 0;
+}
+.available-btn {
+    display: inline-block;
+}
+.available-btn span {
+  display: block;
+  text-align: left;
+}
+.available-btn img {
+  width: 160px;
+  height: 47px;
 }
 /*23. Footer styles*/
 footer {
@@ -1043,6 +1064,7 @@ footer .wrap-contact {
 }
 .footer-menu__item {
     list-style: disc;
+    text-align: left;
 }
 .social-list {
     height: 70px;

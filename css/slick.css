@@ -33,7 +33,7 @@
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 23px; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -20px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -6px; padding: 0; border: none; outline: none; }
+.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 23px; padding: 0 !important; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -20px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -6px; padding: 0; border: none; outline: none; }
 .slick-prev:focus, .slick-next:focus { outlinepadding: 80px 100px;padding: 80px 100px;none; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 

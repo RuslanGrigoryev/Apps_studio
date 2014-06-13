@@ -54,6 +54,8 @@ $(function() {
         });
 
         /*SLIDESHOW PORTFOLIO_ WORKS*/
+        if ($('.slideshow-works').length) {
+
             $('.slideshow-works').slick({
               centerMode: true,
                 centerPadding: '100px',
@@ -80,7 +82,10 @@ $(function() {
                 ]
             });
 
+        }
+
             /*SLIDESHOW RELATED WORKS*/
+        if ($('.slideshow-works__related').length) {
 
             $('.slideshow-works__related').slick({
               slidesToShow: 6,
@@ -90,5 +95,7 @@ $(function() {
               arrows   : false,
               dots     : false
             });
+
+        }
 });
 

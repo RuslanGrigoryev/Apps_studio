@@ -776,6 +776,7 @@ header {
     vertical-align: middle;
     font-size: 1.5em;
     padding: 0 0 0 85px;
+    text-align: left;
 }
 .punkt-list__link {
     position: absolute;
@@ -803,7 +804,7 @@ header {
   padding: 100px 0 0;
   position: relative;
   top: -71px;
-  left: -12px;
+  left: 40px;
 }
 .punkt-list__item--inner__item {
     padding: 0 5px;
@@ -947,9 +948,15 @@ header {
   background: url(../i/markup/bg-line-solutions2.png) left bottom no-repeat;
   display: block;
 }
+.clients-punkt-list .clients-link--innner--left {
+    left: 10px;
+}
+.clients-punkt-list .clients-link--innner--right {
+    left: 10px;
+}
 .clients-punkt-list em {
   font-style: italic;
-  font-size: 22px;
+  font-size: 20px;
   margin: 30px 0 0 0;
   display: block;
 }
@@ -998,9 +1005,10 @@ header {
 }
 .simple-text-wrap {}
 .first {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 60px;
     margin: 0 0 20px 0;
     line-height: 1.3em;
+    text-align: left;
 }
 .simple-text-wrap-list {
     padding: 0 0 0 130px;

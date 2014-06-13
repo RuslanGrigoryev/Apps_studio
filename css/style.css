@@ -1,25 +1,26 @@
 /* 
   ORDER 
  1. Reset styles
- 2.  PAGE INDEX         General styles.
- 3.                     Header styles.
- 4.                     Slider styles.
- 5.                     Section "About-us".
- 6.                     Section "Goals".
- 7.                     Section Call styles.
- 8.  PAGE HOW IT WORKS  Section header-img.
- 9.                     Section how_it_work styles
- 10.                    Section why_it_work styles
- 11.                    Section business    styles   
- 12. PAGE SOLUTIONS     Section classification styles
- 13. PAGE WE-ARE        Section we-are styles
- 14.                    Section clients styles
- 15.                    Section partners styles
- 16. PAGE HOW IT WORKS2 Section header-img.
- 17. PAGE CONTACTS      Contacts.
- 18. PAGE PORTFOLIO     portfolio-works
- 19. PAGE SOLUTIONS2    clients-punkt-list
- 20. PAGE SOLUTIONS2    simple-text section styles
+ 2.  PAGE INDEX             General styles.
+ 3.                         Header styles.
+ 4.                         Slider styles.
+ 5.                         Section "About-us".
+ 6.                         Section "Goals".
+ 7.                         Section Call styles.
+ 8.  PAGE HOW IT WORKS      Section header-img.
+ 9.                         Section how_it_work styles
+ 10.                        Section why_it_work styles
+ 11.                        Section business    styles   
+ 12. PAGE SOLUTIONS         Section classification styles
+ 13. PAGE WE-ARE            Section we-are styles
+ 14.                        Section clients styles
+ 15.                        Section partners styles
+ 16. PAGE HOW IT WORKS2     Section header-img.
+ 17. PAGE CONTACTS          Contacts.
+ 18. PAGE PORTFOLIO         portfolio-works
+ 19. PAGE SOLUTIONS2        clients-punkt-list
+ 20. PAGE SOLUTIONS2        simple-text section styles
+ 21. PAGE PORTFOLIO-WORK    portfolio-head__work styles
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -366,6 +367,13 @@ header {
 /*8. PAGE HOW IT WORKS Section header-img*/
 .header-img .wrapper {
     background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat;
+}
+.header-img .header-img__block {
+  width: 100%;
+  height: 328px;
+  background: url(../i/img-31.png) top center no-repeat;
+  margin: 0 auto;
+  display: block;
 }
 /*9.Section how_it_work styles */
 .work-details__item {
@@ -994,6 +1002,10 @@ header {
     list-style: disc;
     margin: 0 0 6px 0;
     line-height: 1.3em;
+}
+/*21. portfolio-head__work styles */
+.portfolio-head__work span {
+  text-transform: none;
 }
 /*23. Footer styles*/
 footer {

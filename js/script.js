@@ -52,5 +52,43 @@ $(function() {
                 }
             });
         });
+
+        /*SLIDESHOW PORTFOLIO_ WORKS*/
+            $('.slideshow-works').slick({
+              centerMode: true,
+                centerPadding: '100px',
+                slidesToShow: 5,
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 3
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 1
+                    }
+                  }
+                ]
+            });
+
+            /*SLIDESHOW RELATED WORKS*/
+
+            $('.slideshow-works__related').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay : true,
+              autoplaySpeed: 3000,
+              arrows   : false,
+              dots     : false
+            });
 });
 

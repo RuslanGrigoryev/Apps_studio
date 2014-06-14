@@ -252,18 +252,21 @@ header {
   background: url(../i/markup/after-main-menu.png) no-repeat;
   height: 20px;}
 /* 4.Slider styles */
+.main-slider {
+    background: url(../i/markup/bg-slider.png) no-repeat;
+}
 .slideshow { 
     margin: 5px auto; 
     position: relative;
-    height: 260px;
+    height: 330px;
     width: 1250px;
-    padding: 10px;  
+    padding: 0 10px;  
 }
 .slideshow .item { 
     position: absolute;
 }
 .item__img {
-  height: 270px;
+  height: 330px;
   width: 1250px;
 }
 /* 5.Section "About-us"*/

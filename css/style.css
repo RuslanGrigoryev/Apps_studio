@@ -104,7 +104,7 @@ h1 {
 }
 h1 span {
   display: block;
-  padding: 0 0 55px 0;
+  padding: 0 0 63px 0;
   background: url(../i/markup/bg-header.png) center bottom no-repeat;
   margin: 0 0 50px 0;
 }
@@ -116,7 +116,7 @@ input {
   outline: none;
 }
 .about-us, .how_it_work, .why_it_work, .business, .we-are, .clients, .partners {
-  padding: 60px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .grey {
   color: #767676 !important;
@@ -162,7 +162,7 @@ header {
 }
 .top-header {
   padding: 8px 5px 0 5px;
-  height: 72px;
+  height: 75px;
   border-bottom-left-radius: 20px;
   background: #121212 url(../i/markup/bg-top-header.png) center bottom no-repeat;
   border-bottom-right-radius: 20px;
@@ -178,27 +178,29 @@ header {
   background: -webkit-linear-gradient(#9843DD, #675279);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 0 3px 0;
+  margin: 0 0 -2px 0;
+  font-size: 12px;
 }
 .main-info__os-list__item {
   display: inline-block;
-  padding: 0 4px 0 4px;
+  padding: 0 5px 0 3px;
 }
 .main-info__os-list__list--border {
-  background: url(../i/markup/bg-main-info-os.png) center right no-repeat;
+  background: url(../i/markup/bg-main-info-os.png) right 3px no-repeat;
 }
 .main-info__os-list__link {
     font-size: 0.8em;
 }
 .wrap-contact {
   float: right;
-  height: 90px;
+  height: 78px;
+  padding: 13px 25px 0 0;
 }
 .contact__item {
   display: block;
   text-align: right;
-  line-height: 1.4em;
-  font-size: 0.9em;
+  line-height: 1.1em;
+  font-size: 0.8em;
 }
 .main-menu {
   background: url(../i/markup/bg-main-menu.png) no-repeat;

@@ -106,7 +106,7 @@ h1 span {
   display: block;
   padding: 0 0 63px 0;
   background: url(../i/markup/bg-header.png) center bottom no-repeat;
-  margin: 0 0 50px 0;
+  margin: 0 0 41px 0;
 }
 h2 {
   text-transform: uppercase;
@@ -122,7 +122,7 @@ input {
   color: #767676 !important;
 }
 .call__btn button, .callback button {
-    width: 421px;
+    width: 422px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -131,10 +131,11 @@ input {
     border: none;
     cursor: pointer;
     outline: none;
-    font-size: 1.9em;
+    font-size: 2.2em;
     position: absolute;
-    bottom: -65px;
+    bottom: -58px;
     left: 16%;
+    font-family: 'Myriad Pro',Verdana, Arial, sans-serif;
 }
 .map-wrap {
   height: 330px;
@@ -194,13 +195,13 @@ header {
 .wrap-contact {
   float: right;
   height: 78px;
-  padding: 13px 25px 0 0;
+  padding: 12px 30px 0 0;
 }
 .contact__item {
   display: block;
   text-align: right;
-  line-height: 1.1em;
-  font-size: 0.8em;
+  line-height: 1.3em;
+  font-size: 16px;
 }
 .main-menu {
   background: url(../i/markup/bg-main-menu.png) no-repeat;
@@ -279,26 +280,27 @@ header {
 }
 /*6. Section "Goals"*/
 .goals {
-  min-height: 520px;
-  margin: 50px 0 0 0;
-  background: url(../i/markup/bg-slider.png) no-repeat;
+  min-height: 465px;
+  margin: 43px 0 0 0;
+  background: url(../i/markup/bg-center.png) no-repeat;
   background-size: 100% 100%;
 }
 .goals .wrapper {
   background: url(../i/markup/bg-goals-wrapper.png) 0px 0px no-repeat;
-  padding: 40px 0 0 0;
+  padding: 34px 0 0 0;
 }
 .left{
    float: left;
-   margin-right: 10px;
+   margin-right: 2px;
    width: 305px;
    height: 470px;
    text-align: center;
 }
 .right{
    float: right;
-   width: 305px;
+   width: 288px;
    text-align: center;
+   margin-right: 39px;
 }
 .goals-image {
     height: 200px;
@@ -313,15 +315,15 @@ header {
 }
 .wrap-h3 {
   background: url(../i/markup/bg-goals-header.png) top center no-repeat;
-  padding: 11px 0 0 0;
-  margin: 0 0 3px 0;
+  padding: 5px 0 0 0;
+  margin: 0 0 4px 0;
 }
 .wrap-goal-text {
   margin: 0 auto;
   width: 268px;
   height: 135px;
   background: url(../i/markup/bg-text-block.png) no-repeat;
-  margin: 30px auto 10px;
+  margin: 33px auto 10px;
   padding: 0px;
 }
 .wrap-goal-text p {
@@ -345,21 +347,22 @@ header {
 }
 /*7. Section Call styles*/
 .call {
-    min-height: 420px;
-    padding: 40px 0 0 0;
+    min-height: 440px;
+    padding: 22px 0 0 0;
 }
 .call__text {
-    width: 31%;
+    width: 37%;
     float: left;
     background: url(../i/markup/bg-call-text.png) center no-repeat;
     height: 343px;
-    padding: 20px 70px 20px 50px;
+    padding: 15px 34px 20px 46px;
+    text-align: left;
 }
 .call__text strong {
   text-transform: uppercase;
   color: #767676;
   font-size: 1.1em;
-  padding: 25px 0;
+  padding: 26px 40px 26px 0;
   line-height: 1.2em;
   display: inline-block;
   background: url(../i/markup/bg-call-strong-divider.png) center bottom no-repeat;
@@ -367,7 +370,8 @@ header {
 .call__text p {
   font-size: 1.1em;
   color: #505050;
-  padding: 20px 0 0 0;
+  padding: 22px 0 0 0;
+  line-height: 21px;
 }
 .call__btn {
     width: 49%;  
@@ -375,6 +379,7 @@ header {
     height: 343px;
     background: url(../i/markup/apple-icon.png) center top no-repeat;
     position: relative;
+    margin: -22px 37px 0 0px;
 }
 /*8. PAGE HOW IT WORKS Section header-img*/
 .header-img .wrapper {
@@ -865,8 +870,7 @@ header {
 .callback input {
   width: 442px;
   height: 60px;
-  background: url(../i/markup/bg-input.png) no-repeat
-;
+  background: url(../i/markup/bg-input.png) no-repeat;
   text-align: center;
   font-size: 1.4em;
   text-transform: uppercase;
@@ -1053,45 +1057,48 @@ header {
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;
   height: 100px;
-  padding: 40px 0 0 0;
+  padding: 26px 0 0 0;
 }
 .footer-logo {
     height: 105px;
     float: left;
     width: 170px;
+    padding: 0 0 0 10px;
 }
 footer .wrap-contact {
-  padding: 15px 0 0 0;
+  padding: 11px 50px 0 0;
   height: 60px;
   position: relative;
 }
 .footer-phone {
     position: absolute;
-    left: -90px;
-    top: 6px;
+    left: -81px;
+    top: 0px;
 }
 .footer-text {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    padding: 4px 0 0 0;
 }
 .footer-menu {
     float: left;
-    margin-left: 110px;
-    padding: 10px 0 0 0;
+    margin-left: 102px;
+    /* padding: 4px 0 0 0; */
 }
 .footer-menu__list {
     height: 90px;
     float: left;
-    margin-right: 70px;
+    margin-right: 52px;
 }
 .footer-menu__item {
     list-style: disc;
     text-align: left;
+    line-height: 20px;
 }
 .social-list {
     height: 70px;
     float: right;
     width: 300px;
-    margin: 0 150px 0 0;
+    margin: 0 149px 0 0;
     padding: 15px 0 0 0;
 }
 .social-list__item {

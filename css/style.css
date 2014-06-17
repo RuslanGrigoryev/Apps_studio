@@ -1003,7 +1003,7 @@ header .contact__item {
 }
 /*18.portfolio-works*/
 .portfolio-works {
-  margin: 0 0 94px 0;
+  margin: 35px 0 94px 0;
   background: url(../i/markup/bg-portfolio.png) top center no-repeat;
   background-size: 100% 100%;
   min-height: 350px;
@@ -1014,10 +1014,12 @@ header .contact__item {
   box-sizing: border-box;
 }
 .portfolio-head {
-  margin: 40px 0 0 0; 
+  margin: 29px 0 0 0; 
 }
 .portfolio-head h1 span {
-    padding: 0 0 52px 0;
+    padding: 0 0 39px 0;
+    line-height: 26px;
+    letter-spacing: -0.3px;
 }
 .portfolio-list__link {
     display: block;
@@ -1050,7 +1052,7 @@ header .contact__item {
     margin: 32px 0 0 0;
     padding: 5px 0;
     text-transform: uppercase;
-    background: url(../i/markup/bg-goals-header.png) center 6px no-repeat;
+    background: url(../i/markup/bg-goals-header.png) center 5px no-repeat;
 }
 .portfolio-list__item strong span {
   background: -webkit-linear-gradient(#611b85, #9634e6);
@@ -1074,6 +1076,13 @@ header .contact__item {
   box-sizing: border-box;
   padding: 31px 0;
   color: #fff;
+}
+.change-logo {
+  text-align: center;
+}
+.main-slider__works .slideshow {
+    margin: 17px auto;
+  
 }
 /*19 clients-punkt-list*/
 .clients-punkt-list strong{
@@ -1167,7 +1176,7 @@ header .contact__item {
 }
 /*21. portfolio-head__work styles */
 .portfolio-head__work {
-  padding: 30px 0 0 0;
+  padding: 0px 0 0 0;
 }
 .portfolio-head__work span {
   text-transform: none;

@@ -24,7 +24,7 @@
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 28px; padding: 0 !important; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -47px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -6px; padding: 0; border: none; outline: none; }
+.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 28px; padding: 0 !important; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -53px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -9px; padding: 0; border: none; outline: none; }
 .slick-prev:focus, .slick-next:focus { outlinepadding: 80px 100px;padding: 80px 100px;none; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
@@ -53,7 +53,7 @@
 	color: #e67e22;
 	opacity: 1;
 	transform: scale(1.08);
-	margin: -51px 0 0 0;
+	margin: 109px 0 0 0;
 }
 .slideshow-works__related .slick-slide img {
 	text-align: center;
@@ -65,8 +65,29 @@
 }
 .portfolio-works .slick-slide {
 	width: 148px !important;
-	margin: 0 20px !important;
+	margin: 0px 20px 0 20px !important;
+	/* background: url(../i/markup/shadow-center.png) no-repeat; */
 }
 .portfolio-works .slick-center {
-	margin: 0 80px !important;
+	padding: 0 75px !important;
+	height: 600px;
+	margin: -160px 0px 0 0px !important;
+	background: url(../i/markup/shadow-center.png) 8px  -30px no-repeat;
+}
+.main-slider-works__btns .slideshow__slick .slick-prev, .main-slider-works__btns .slideshow__slick .slick-next {
+    width: 87px;
+    height: 352px;
+    top: 0px;
+    z-index: 9999;
+}
+.slideshow__slick .item img {
+	margin: 0 auto;
+}
+.main-slider-works__btns .slideshow__slick .slick-prev {
+	background: url(../i/markup/slick-prev-main.png) no-repeat;
+	left: -6px;
+}
+.main-slider-works__btns .slideshow__slick .slick-next {
+	background: url(../i/markup/slick-next-main.png) 6px -2px no-repeat;
+	right: 0px;
 }

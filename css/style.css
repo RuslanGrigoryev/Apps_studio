@@ -1003,19 +1003,22 @@ header .contact__item {
 }
 /*18.portfolio-works*/
 .portfolio-works {
-  margin: 0 0 20px 0;
+  margin: 0 0 94px 0;
   background: url(../i/markup/bg-portfolio.png) top center no-repeat;
   background-size: 100% 100%;
   min-height: 350px;
+  padding: 0 0 50px 0;
 }
 .portfolio-works .wrapper{
-  padding: 40px 60px;
+  padding: 31px 36px;
   box-sizing: border-box;
 }
 .portfolio-head {
-  margin: 30px 0 0 0; 
+  margin: 40px 0 0 0; 
 }
-.portfolio-list {}
+.portfolio-head h1 span {
+    padding: 0 0 52px 0;
+}
 .portfolio-list__link {
     display: block;
 }
@@ -1024,7 +1027,7 @@ header .contact__item {
 }
 .portfolio-list__item {
     float: left;
-    margin: 0 70px 70px 0;
+    margin: 0 94px 53px 0;
     position: relative;
     text-align: center;
     width: 327px;
@@ -1044,7 +1047,7 @@ header .contact__item {
 }
 .portfolio-list__item strong {
     display: block;
-    margin: 50px 0 0 0;
+    margin: 32px 0 0 0;
     padding: 5px 0;
     text-transform: uppercase;
     background: url(../i/markup/bg-goals-header.png) center 6px no-repeat;
@@ -1062,8 +1065,8 @@ header .contact__item {
   width: 427px;
   position: absolute;
   display: block;
-  left: 33%;
-  bottom: -18px;
+  left: 32.8%;
+  bottom: -98px;
   margin: 0px auto;
   text-transform: uppercase;
   text-align: center;

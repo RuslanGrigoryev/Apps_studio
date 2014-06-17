@@ -319,9 +319,10 @@ header .contact__item {
   font-size: 1.3em;
 }
 .wrap-h3 {
-  background: url(../i/markup/bg-goals-header.png) top center no-repeat;
+  background: url(../i/markup/bg-goals-header.png) center -6px no-repeat;
   padding: 5px 0 0 0;
   margin: 0 0 4px 0;
+  background-size: 100%;
 }
 .wrap-goal-text {
   margin: 0 auto;
@@ -339,16 +340,16 @@ header .contact__item {
   padding: 10px 15px;
 }
 .goals-image__analitic {
-    background-position: -44px 0px;
+    background-position: -54px 0px;
 }
 .goals-image__project {
-    background-position: -353px 0;
+    background-position: -354px 0;
 }
 .goals-image__develop {
-    background-position: -647px 0;
+    background-position: -657px 0;
 }
 .goals-image__techno {
-    background-position: -947px 0;
+    background-position: -957px 0;
 }
 /*7. Section Call styles*/
 .call {

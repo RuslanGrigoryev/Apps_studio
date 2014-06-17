@@ -167,7 +167,7 @@ header .contact__item {
 
 }
 .top-header {
-  padding: 8px 0px 0 20px;
+  padding: 8px 0px 0px 20px;
   height: 72px;
   border-bottom-left-radius: 20px;
   background: url(../i/markup/bg-top-header.png) center bottom no-repeat;

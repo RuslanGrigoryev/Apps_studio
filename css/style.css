@@ -804,7 +804,7 @@ header .contact__item {
     height: 149px;
     margin: 0 0 0 20px;
 }
-.punkt-list__wrap-text em {
+.how_it_work_2 .punkt-list__wrap-text em {
     position: absolute;
     z-index: 99999;
     left: 20px;

@@ -3,7 +3,7 @@
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
 .slideshow-works .slick-list {
-	padding: 165px 100px 0 120px !important;
+	padding: 165px 100px 0 100px !important;
 	height: 361px !important;
 }
 .slick-list:focus { outline: none; }
@@ -30,10 +30,10 @@
 
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.85; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.slick-prev { left: 47%; background-position: -2px -4px;}
+.slick-prev { left: 48%; background-position: -2px -4px;}
 .slick-prev:before { /* content: "\2190"; */ }
 
-.slick-next { right: 46.8%; background-position: -46px -4px;}
+.slick-next { right: 46%; background-position: -46px -4px;}
 .slick-next:before { /* content: "\2192"; */ }
 
 /* Dots */
@@ -63,6 +63,10 @@
 	background: url(../i/markup/bg-related-work-img.png) 21px 21px no-repeat;
 	padding: 0 0 10px 0;
 }
-.slick-cloned {
-	width: 195px !important;
+.portfolio-works .slick-slide {
+	width: 148px !important;
+	margin: 0 20px !important;
+}
+.portfolio-works .slick-center {
+	margin: 0 80px !important;
 }

@@ -55,31 +55,10 @@ $(function() {
 
         /*SLIDESHOW PORTFOLIO_ WORKS*/
         if ($('.slideshow-works').length) {
-
             $('.slideshow-works').slick({
               centerMode: true,
-                centerPadding: '100px',
-                slidesToShow: 5,
-                responsive: [
-                  {
-                    breakpoint: 768,
-                    settings: {
-                      arrows: false,
-                      centerMode: true,
-                      centerPadding: '40px',
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 480,
-                    settings: {
-                      arrows: false,
-                      centerMode: true,
-                      centerPadding: '40px',
-                      slidesToShow: 1
-                    }
-                  }
-                ]
+                centerPadding: '220px',
+                slidesToShow: 5
             });
 
         }

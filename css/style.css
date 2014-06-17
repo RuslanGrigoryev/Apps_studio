@@ -159,7 +159,7 @@ input {
   background: -webkit-linear-gradient(#666464, #9634e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 /*3.Header styles*/
 header {
@@ -1003,11 +1003,11 @@ header .contact__item {
 }
 /*18.portfolio-works*/
 .portfolio-works {
-  margin: 35px 0 94px 0;
+  margin: 35px 0 4px 0;
   background: url(../i/markup/bg-portfolio.png) top center no-repeat;
   background-size: 100% 100%;
   min-height: 350px;
-  padding: 0 0 50px 0;
+  padding: 0 0 0px 0;
 }
 .portfolio-works .wrapper{
   padding: 31px 36px;
@@ -1195,6 +1195,9 @@ header .contact__item {
 .available-btn img {
   width: 160px;
   height: 47px;
+}
+.related-works {
+  padding: 45px 0 0 0;
 }
 .related-works h3 {
   margin: 0 0 50px 0;

@@ -650,10 +650,36 @@ header .contact__item {
   vertical-align: middle;
   display: table-cell;
 }
+.classification h1 span {
+    padding: 0 0 39px 0;
+}
+.classification .punkt-list__item {
+    margin: 0 0 17px 0px !important;
+    width: 623px;
+}
+.classification .punkt-list__wrap-text {
+  margin: 0 0 0 18px;
+}
+.classification .punkt-list__item:nth-child(2n) .punkt-list__wrap-text {
+  margin: 0 0 0 -20px;
+}
+.classification .clients-punkt-list p {
+  padding: 39px 0 0 33px;
+  letter-spacing: 0px;
+}
+.classification .clients-punkt-list em {
+  line-height: 26px;
+  margin: 26px 0 0 0;
+  letter-spacing: 1px;
+}
+.classification .punkt-list__link {
+    height: 26px;
+    background: url(../i/markup/class-detail-link.png) 18px 7px no-repeat;
+    font-size: 0.5em;
+}
 /*13. Section we-are styles*/
 .we-are p {
-    font-size: 1.2em;
-  
+    font-size: 1.2em;  
     margin: 0 0 40px 0;
     padding: 0 50px;
 }
@@ -847,8 +873,8 @@ header .contact__item {
 .punkt-list__item--inner {
   background: url(../i/markup/bg-inner-list.png) no-repeat;
   margin: 0 12px 0 10px;
-  height: 422px;
-  padding: 100px 30px 0 0;
+  /* height: 422px; */
+  padding: 71px 30px 0 0;
   position: relative;
   top: -71px;
   width: 1050px;
@@ -864,7 +890,7 @@ header .contact__item {
 .punkt-list__item--inner__item h4 {
     font-size: 1.2em;
     text-align: left;
-    margin: 0 0 26px -7px;
+    margin: 0 0 20px -7px;
     letter-spacing: 0.4px;
 }
 .punkt-list__item--inner__item p {
@@ -1009,10 +1035,13 @@ header .contact__item {
   display: block;
 }
 .clients-punkt-list .clients-link--innner--left {
-    left: 10px;
+    left: 30px;
+    top: -60px;
 }
 .clients-punkt-list .clients-link--innner--right {
-    left: 10px;
+    left: 32px;
+    top: -60px;
+    width: 1165px;
 }
 .clients-punkt-list em {
   font-style: italic;
@@ -1027,7 +1056,7 @@ header .contact__item {
     background: url(../i/markup/bg-solutions2-punkts.png) no-repeat;
 }
 .clients-punkt-list {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 0px;
 }
 .clients-punkt-list p {
   padding: 30px 0 0 30px;
@@ -1042,42 +1071,49 @@ header .contact__item {
     right: 41%;
     top: inherit;
 }
-.punkt-list__link--active {
-  background: url(../i/markup/detail-link--active.png) center no-repeat;
+.classification .punkt-list__link--active {
+  background: url(../i/markup/detail-link--active.png) center bottom no-repeat;
 }
 .clients-link--inner {
     background-size: 100% 100%;
-    width: 985px;
-    height: 280px;
+    width: 1175px;
+    /* height: 425px; */
 }
 .clients-link--inner .punkt-list__item--inner__item {
     margin: 10px 40px;
 }
 .clients-link--inner .punkt-list__item--inner__item p {
   padding: 5px;
+  min-height: 100px;
 }
 .clients-link--innner--left {
   background: url(../i/markup/bg-inner-list-left.png) no-repeat;
 }
 /*20. Secttion simple-text styles*/
 .simple-text {
-    margin: 0 0 50px 0;
+    margin: 0 0 77px 0;
 }
-.simple-text-wrap {}
+.simple-text h1 span {
+  padding: 0 0 40px 0;
+  margin: 0 0 33px 0;
+}
 .first {
-    padding: 0 0 0 60px;
-    margin: 0 0 20px 0;
-    line-height: 1.3em;
+    padding: 0 69px;
+    margin: 0 0 28px 0;
+    line-height: 1.2em;
+    font-size: 1.4em;
     text-align: left;
 }
 .simple-text-wrap-list {
-    padding: 0 0 0 130px;
+    padding: 0 140px 0 90px;
 }
 .simple-text-wrap-item {
     list-style: disc;
-    margin: 0 0 6px 0;
-    line-height: 1.3em;
+    margin: 0 0 1px 0;
+    line-height: 1.2em;
     text-align: left;
+    font-size: 1.4em;
+    padding: 0 0 0 17px;
 }
 /*21. portfolio-head__work styles */
 .portfolio-head__work {

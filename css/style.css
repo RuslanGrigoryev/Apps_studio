@@ -115,6 +115,10 @@ input {
   border: none;
   outline: none;
 }
+.with__bottom {
+  background: url(../i/markup/bg-slider.png) no-repeat;
+  margin: 8px 0 0 0;
+}
 .about-us, .how_it_work, .why_it_work, .business, .we-are, .clients, .partners {
   padding: 50px 0 0 0;
 }
@@ -389,7 +393,7 @@ header .contact__item {
 }
 /*8. PAGE HOW IT WORKS Section header-img*/
 .header-img .wrapper {
-    background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat;
+    /* background: url(../i/markup/header-img-bg.png) 82px 0px no-repeat; */
 }
 .header-img .header-img__block {
   width: 100%;
@@ -402,10 +406,15 @@ header .contact__item {
 .how_it_work {
     padding: 0px;
 }
+.how_it_work_2 h1 span {
+    margin: 40px 0 30px 0 !important;
+
+    padding: 0 0 26px 0 !important;
+}
 .how_it_work h1 span {
     padding: 0 0 36px 0;
   
-    margin: 0 0 37px 0;
+    margin: 0px 0 37px 0;
 }
 .work-details__item {
     float: left;
@@ -757,7 +766,7 @@ header .contact__item {
 }
 /* 16. PAGE HOW IT WORKS2 Section header-img. */
 .punkt-list {
-    padding: 0 0 0 100px;
+    padding: 0 0 0 0px;
 }
 .punkt-list__item {
     margin: 0 0 40px 0;
@@ -795,18 +804,32 @@ header .contact__item {
     height: 149px;
     margin: 0 0 0 20px;
 }
+.punkt-list__wrap-text em {
+    position: absolute;
+    z-index: 99999;
+    left: 20px;
+    top: 28px;
+    height: 109px;
+    font-size: 5.6em;
+    opacity: 0.1;
+}
+.punkt-list__item--inner--active .punkt-list__link {
+    background: url(../i/markup/detail-link__active.png) 0px 13px no-repeat;
+  
+}
 .punkt-list__wrap-text p {
     display: table-cell;
     vertical-align: middle;
     font-size: 1.5em;
-    padding: 0 0 0 85px;
+    padding: 0 0 0 79px;
     text-align: left;
+    letter-spacing: 1px;
 }
 .punkt-list__link {
     position: absolute;
-    top: 45px;
+    top: 44px;
     text-transform: uppercase;
-    right: 20px;
+    right: 23px;
     font-size: 0.6em;
     color: #494747;
     text-align: center;
@@ -823,27 +846,34 @@ header .contact__item {
 }
 .punkt-list__item--inner {
   background: url(../i/markup/bg-inner-list.png) no-repeat;
-  margin: 0 92px 0 10px;
-  height: 322px;
-  padding: 100px 0 0;
+  margin: 0 12px 0 10px;
+  height: 422px;
+  padding: 100px 30px 0 0;
   position: relative;
   top: -71px;
-  left: 40px;
+  width: 1050px;
+  box-sizing: border-box;
+  left: 88px;
 }
 .punkt-list__item--inner__item {
-    padding: 0 5px;
+    /* padding: 0 5px; */
     list-style: disc;
-    margin: 20px 40px 40px 60px;
+    margin: 8px 0px 25px 42px;
     color: #a3a3a3;
 }
 .punkt-list__item--inner__item h4 {
-    font-size: 1.3em;
-    margin: 0 0 30px 0;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 0 0 26px -7px;
+    letter-spacing: 0.4px;
 }
 .punkt-list__item--inner__item p {
     color: #595959;
-    font-size: 1em;
+    font-size: 1.1em;
+    text-align: left;
     font-style: italic;
+    text-indent: 20px;
+    line-height: 22px;
 }
 /*17.Contacts.*/
 .wrap-contacts-ul {

@@ -21,7 +21,7 @@ $(function() {
     	e.preventDefault();
         var $this = $(this),
             $text = $this.parent().next(),
-            $parent = $this.parent('li');
+            $parent = $this.closest('li');
     	$texts.not($text).slideUp();
     	$text.stop(true, false).slideToggle();
         $items.not($parent).removeClass('punkt-list__item--inner--active');

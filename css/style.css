@@ -160,12 +160,17 @@ input {
 /*3.Header styles*/
 header {
   height: 138px;
+  background: url(../i/markup/bg-head.png) top center  no-repeat;
+}
+header .contact__item {
+    font-size: 12px;
+
 }
 .top-header {
-  padding: 8px 5px 0 5px;
-  height: 75px;
+  padding: 8px 0px 0 20px;
+  height: 72px;
   border-bottom-left-radius: 20px;
-  background: #121212 url(../i/markup/bg-top-header.png) center bottom no-repeat;
+  background: url(../i/markup/bg-top-header.png) center bottom no-repeat;
   border-bottom-right-radius: 20px;
 }
 .wrap-logo {
@@ -368,7 +373,7 @@ header {
   background: url(../i/markup/bg-call-strong-divider.png) center bottom no-repeat;
 }
 .call__text p {
-  font-size: 1.1em;
+  font-size: 18px;
   color: #505050;
   padding: 22px 0 0 0;
   line-height: 21px;

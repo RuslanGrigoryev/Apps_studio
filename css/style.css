@@ -686,22 +686,46 @@ header .contact__item {
     font-size: 0.5em;
 }
 /*13. Section we-are styles*/
+.we-are {
+    padding: 40px 0 28px 0;
+}
+.we-are h1 span {
+    padding: 0 0 25px 0;
+    margin: 0 0 36px 0;
+}
 .we-are p {
-    font-size: 1.2em;  
-    margin: 0 0 40px 0;
-    padding: 0 50px;
+    font-size: 1.4em;  
+    margin: 0 0 28px 0;
+    padding: 0 60px;
+    text-align: left;
+    line-height: 26px;
 }
 /*14. Section clients styles*/
+.clients {
+  background: url(../i/markup/bg-cl.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 37px 0 22px 0;
+}
+.clients h1 span {
+  padding: 0 0 27px 0;
+  margin: 0 0 51px 0;
+}
 .clients-list {}
 .clients-list__item {
     float: left;
-    margin: 0 34px 20px 34px;
+    margin: 0 0px 47px 41px;
 }
 .clients-list__item__link {
     display: inline-block;
     width: 110px;
     height: 110px;
     background: url(../i/markup/sprite-clients.png) no-repeat;
+}
+.clients-list__item__link--night2 {
+  background-position: -1069px -8px;
+}
+.clients-list__item__link--forum {
+  background-position: -1069px -168px;
 }
 .clients-list__item__link--spa {
     background-position: -9px -8px;
@@ -745,55 +769,70 @@ header .contact__item {
 .clients-list__item__link--tax {
     background-position: -759px -168px;
 }
+.clients-list__item__link--night2:hover {
+  background-position: -1069px -320px;
+}
+.clients-list__item__link--forum:hover {
+  background-position: -1069px -480px;
+}
 .clients-list__item__link--spa:hover {
-    background-position: -10px -321px;
+    background-position: -8px -321px;
 }
 .clients-list__item__link--clever:hover {
-    background-position: -159px -321px;
+    background-position: -158px -321px;
 }
 .clients-list__item__link--three:hover {
-    background-position: -309px -321px;
+    background-position: -308px -321px;
 }
 .clients-list__item__link--roll:hover {
-    background-position: -459px -321px;
+    background-position: -458px -321px;
 }
 .clients-list__item__link--anti-taxi:hover {
-    background-position: -609px -321px;
+    background-position: -608px -321px;
 }
 .clients-list__item__link--taxi:hover {
-    background-position: -759px -321px;
+    background-position: -758px -321px;
 }
 .clients-list__item__link--key:hover {
-    background-position: -909px -321px;
+    background-position: -908px -321px;
 }
 .clients-list__item__link--twit:hover {
-    background-position: -9px -481px;
+    background-position: -8px -481px;
 }
 .clients-list__item__link--party:hover {
-    background-position: -159px -481px;
+    background-position: -158px -481px;
 }
 .clients-list__item__link--stone:hover {
-    background-position: -309px -481px;
+    background-position: -308px -481px;
 }
 .clients-list__item__link--gds:hover {
-    background-position: -459px -481px;
+    background-position: -458px -481px;
 }
 .clients-list__item__link--bedroom:hover {
-    background-position: -609px -481px;
+    background-position: -608px -481px;
 }
 .clients-list__item__link--numone:hover {
-    background-position: -909px -481px;
+    background-position: -908px -481px;
 }
 .clients-list__item__link--tax:hover {
-    background-position: -759px -481px;
+    background-position: -758px -481px;
 }
 /*15. Section partners styles*/
+.partners {
+  padding: 39px 0 0 0;
+}
+.partners h1 span {
+    padding: 0 0 26px 0;
+  
+    margin: 0 0 34px 0;
+}
 .partners-list {
     text-align: center;
-    margin: 0 0 60px 0;
+    margin: 0 0 35px 0;
 }
 .partners-list__item {
     display: inline-block;
+    margin: 0px 7px;
 }
 .partners-list__item__link {
     display: block;

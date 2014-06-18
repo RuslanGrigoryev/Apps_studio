@@ -160,6 +160,7 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
+  color: #9843DD;
 }
 /*3.Header styles*/
 header {
@@ -190,6 +191,7 @@ header .contact__item {
   -webkit-text-fill-color: transparent;
   margin: 0 0 -2px 0;
   font-size: 12px;
+  color: #9843DD;
 }
 .main-info__os-list__item {
   display: inline-block;
@@ -225,7 +227,7 @@ header .contact__item {
     -moz-border-radius: 2px;
     border-radius: 2px;
     position: relative;
-    top: -9px;
+    top: -8px;
 }
 .main-menu__list {
     display: table-row;
@@ -254,6 +256,7 @@ header .contact__item {
   background: -webkit-linear-gradient(#666464, #9634e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #9843DD;
 }
 .main-menu__link:hover:after, .main-menu__link.main-menu__link--active:after {
   background: url(../i/markup/bg-main-menu-hover.png) -17px -4px no-repeat;

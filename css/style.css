@@ -234,6 +234,9 @@ header .contact__item {
     display: table-cell;
     float: none;
 }
+.main-menu__item:nth-child(3) {
+  width: 18%;
+}
 .main-menu__link {
     display: block;
     padding: 8px 15px;
@@ -307,7 +310,7 @@ header .contact__item {
 }
 .right{
    float: right;
-   width: 288px;
+   width: 290px;
    text-align: center;
    margin-right: 39px;
 }

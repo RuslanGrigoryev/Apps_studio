@@ -231,7 +231,7 @@ input {
   background: -webkit-linear-gradient(#666464, #9634e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #9843DD;
 }
 /*3.Header styles*/
@@ -297,41 +297,42 @@ header .contact__item {
     -moz-border-radius: 2px;
     border-radius: 2px;
     position: relative;
-    padding: 10px 0px 0 0;
+    padding: 4px 0px 0 0;
     box-sizing: border-box;
 }
 .main-menu__list {
-    padding: 0 0px 0 80px;
+    padding: 0 0px 0 35px;
 }
 .main-menu__item {
     display: inline-block;
-    margin: 0 41px;
+    margin: 0 17px;
+    background: url(../i/markup/sprite-main-menu.png) center -5px no-repeat;
 }
 .main-menu__item:nth-child(2) {
-    margin: 0 0px 0 76px;
-
+    margin: 0 0px 0 36px;
 }
 .main-menu__item:nth-child(3) {
-    margin: 0 0 0 97px;
-  
+    margin: 0 0 0 57px;
 }
 .main-menu__item:nth-child(4) {
-    margin: 0 0 0 101px;
-  
+    margin: 0 0 0 61px;
 }
 .main-menu__item:nth-child(5) {
-    margin: 0 0 0 121px;
-  
+    margin: 0 0 0 51px;
 }
 .main-menu__link {
     display: block;
-    padding: 8px 15px;
+    padding: 10px 40px;
     text-decoration: none;
     text-align: center;
     position: relative;
     text-transform: uppercase;
-    /* margin: 0 53px; */
-    font-size: 17px;
+    font-size: 18px;
+}
+.main-menu__item:hover {
+  text-decoration: none;
+  background: url(../i/markup/sprite-main-menu.png) center -53px no-repeat;
+
 }
 .main-menu__link:hover, .main-menu__link--active {
   transition: all 0.3s ease;
@@ -351,7 +352,7 @@ header .contact__item {
   content: "";
   position: absolute;
   bottom: -15px;
-  left: 47%;
+  left: 45%;
   width: 20px;
   background: url(../i/markup/after-main-menu.png) no-repeat;
   height: 20px;}
@@ -436,16 +437,16 @@ header .contact__item {
   padding: 10px 15px;
 }
 .goals-image__analitic {
-    background-position: -54px 0px;
+    background-position: 4px 0px;
 }
 .goals-image__project {
-    background-position: -354px 0;
+    background-position: -302px 0;
 }
 .goals-image__develop {
-    background-position: -657px 0;
+    background-position: -602px 0;
 }
 .goals-image__techno {
-    background-position: -957px 0;
+    background-position: -903px 0;
 }
 /*7. Section Call styles*/
 .call {
@@ -459,6 +460,7 @@ header .contact__item {
     height: 343px;
     padding: 15px 34px 20px 46px;
     text-align: left;
+    margin: 0 0 0 -10px;
 }
 .call__text strong {
   text-transform: uppercase;

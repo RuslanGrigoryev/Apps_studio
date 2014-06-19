@@ -1234,6 +1234,7 @@ header .contact__item {
 }
 .classification .punkt-list__link--active {
   background: url(../i/markup/detail-link--active.png) center bottom no-repeat;
+  color: #7C40AD;
 }
 .clients-link--inner {
     background-size: 100% 100%;

@@ -77,8 +77,11 @@ $(function() {
 
         }
 
-        $('.slideshow__slick').slick({
-          autoplay: true
-        });
+         if ($('.slideshow__slick').length) {
+
+          $('.slideshow__slick').slick({
+            autoplay: true
+          });
+        }
 });
 

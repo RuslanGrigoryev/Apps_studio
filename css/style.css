@@ -461,10 +461,11 @@ header .contact__item {
 .goals-image {
     height: 200px;
     width: 200px;
+    position: relative;
     margin: 0 auto;
     margin-bottom: 10px;
-    transition: background 1s ease-out;
-    -webkit-transition: background 1s ease-out;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 .goals h4 {
   text-transform: lowercase;
@@ -494,29 +495,42 @@ header .contact__item {
   color: rgba(255, 255, 255, 0.4);
   font-family: 'Myriad Pro Regular';
 }
+.goals-image span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+.goals-image:hover span {
+  opacity: 1;
+} 
 .goals-image__analitic {
-    background: url(../i/markup/analitic.png) no-repeat;
+    background: url(../i/markup/analitic-sprite.png) no-repeat;
+}
+.goals-image__analitic span {
+  background: url(../i/markup/analitic-sprite.png) 0px -200px no-repeat;
 }
 .goals-image__project {
-    background: url(../i/markup/project.png) no-repeat;
+    background: url(../i/markup/develop-sprite.png) no-repeat;
+}
+.goals-image__project span {
+    background: url(../i/markup/develop-sprite.png) 0px -200px no-repeat;
 }
 .goals-image__develop {
-    background: url(../i/markup/develop.png) no-repeat;
+    background: url(../i/markup/project-sprite.png) no-repeat;
+}
+.goals-image__develop span {
+    background: url(../i/markup/project-sprite.png) 0px -200px no-repeat;
 }
 .goals-image__techno {
-    background: url(../i/markup/techno.png) no-repeat;
+    background: url(../i/markup/techno-sprite.png) no-repeat;
 }
-.goals-image__analitic:hover {
-    background: url(../i/markup/analitic-hover.png) no-repeat;
-}
-.goals-image__project:hover {
-    background: url(../i/markup/project-hover.png) no-repeat;
-}
-.goals-image__develop:hover {
-    background: url(../i/markup/develop-hover.png) no-repeat;
-}
-.goals-image__techno:hover {
-    background: url(../i/markup/techno-hover.png) no-repeat;
+.goals-image__techno span {
+    background: url(../i/markup/techno-sprite.png) 0px -200px no-repeat;
 }
 /*7. Section Call styles*/
 .call {

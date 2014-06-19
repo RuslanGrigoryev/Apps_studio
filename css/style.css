@@ -1101,8 +1101,9 @@ header .contact__item {
 /*17.Contacts.*/
 .wrap-contacts-ul {
     display: inline-block;
-    width: 45%;
+    width: 30%;
     text-align: left;
+    vertical-align: top;
 }
 .contacts-list {
     padding: 0px 0 0 70px;
@@ -1111,7 +1112,7 @@ header .contact__item {
     padding: 0 0 0 108px;
 }
 .contacts__item {
-    font-size: 1.8em;
+    font-size: 1.3em;
     line-height: 1.3em;
     color: #BEB2B2;
     letter-spacing: 0.4px;
@@ -1126,8 +1127,9 @@ header .contact__item {
 .callback {
   background: url(../i/markup/bg-form-popup.png) no-repeat;
   width: 480px;
-  height: 251px;
+  height: 740px;
   position: relative;
+  background-size: 100% 100%;
   text-align: center;
   margin: 60px auto 60px;
   padding: 33px 0 0 0;
@@ -1135,7 +1137,7 @@ header .contact__item {
 }
 .callback button {
     left: 67px;
-    bottom: -7px;
+    bottom: -37px;
     height: 83px;
     background-size: 100%;
     font-size: 1.5em;
@@ -1337,6 +1339,7 @@ header .contact__item {
 }
 .available-btn {
     display: inline-block;
+    margin: 0 5px;
 }
 .available-btn span {
   display: block;

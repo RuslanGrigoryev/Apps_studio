@@ -355,6 +355,8 @@ header .contact__item {
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;  
     color: #4b4b4b;
+    transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
 }
 .main-menu__item:hover {
   text-decoration: none;
@@ -434,9 +436,9 @@ header .contact__item {
 .goals-image {
     height: 200px;
     width: 200px;
-    background: url(../i/markup/sprite-goals.png) no-repeat;
     margin: 0 auto;
     margin-bottom: 10px;
+    transition: background 1s ease-out;
 }
 .goals h4 {
   text-transform: uppercase;
@@ -467,16 +469,28 @@ header .contact__item {
   font-family: 'Myriad Pro Regular';
 }
 .goals-image__analitic {
-    background-position: 4px 0px;
+    background: url(../i/markup/analitic.png) no-repeat;
 }
 .goals-image__project {
-    background-position: -302px 0;
+    background: url(../i/markup/project.png) no-repeat;
 }
 .goals-image__develop {
-    background-position: -602px 0;
+    background: url(../i/markup/develop.png) no-repeat;
 }
 .goals-image__techno {
-    background-position: -903px 0;
+    background: url(../i/markup/techno.png) no-repeat;
+}
+.goals-image__analitic:hover {
+    background: url(../i/markup/analitic-hover.png) no-repeat;
+}
+.goals-image__project:hover {
+    background: url(../i/markup/project-hover.png) no-repeat;
+}
+.goals-image__develop:hover {
+    background: url(../i/markup/develop-hover.png) no-repeat;
+}
+.goals-image__techno:hover {
+    background: url(../i/markup/techno-hover.png) no-repeat;
 }
 /*7. Section Call styles*/
 .call {
@@ -1352,7 +1366,7 @@ footer {
     display: block;
     background: url(../i/markup/footer-logo.png) 19px -2px no-repeat;
     height: 64px;
-    transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-out;
 }
 .footer-logo__link:hover {
     background: url(../i/markup/logo.png) 16px -2px no-repeat;

@@ -1379,8 +1379,15 @@ footer .wrap-contact {
 }
 .footer-phone {
     position: absolute;
-    left: -81px;
-    top: 0px;
+    left: -68px;
+    width: 59px;
+    top: 10px;
+    height: 59px;
+    transition: background-image 1s ease-in-out;    
+    background-image: url("../i/markup/phones.png");
+}
+.footer-phone:hover {
+  background-image: url("../i/markup/phones-hover.png");
 }
 .footer-text {
     font-size: 0.7em;

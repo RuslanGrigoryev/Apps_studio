@@ -224,7 +224,7 @@ input {
     text-transform: uppercase;
     text-align: center;
     height: 107px;
-    background: url(../i/markup/bg-btn.png);
+    background: url(../i/markup/forma_button.png);
     border: none;
     cursor: pointer;
     outline: none;
@@ -235,11 +235,31 @@ input {
     color: rgba(255 , 255, 255, 0.3);
     text-shadow: 1px 1px 1px #FFF, 0 0 0 #000, 1px 1px 1px #FFF;
     font-family: 'Myriad Pro Semibold';
-}
-.call__btn button:hover {
-    background-image: url(../i/markup/bg-btn-hover.png);
     transition: all 2s ease-out;
     -webkit-transition: all 2s ease-out;
+}
+.call__btn button:hover .empty {
+    opacity: 1
+}
+.call__btn button .empty {
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  position: absolute;
+  background: url(../i/markup/forma_button.png) 0px -151px;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 299;
+}
+.call__btn button .call__btn__text {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
 }
 .map-wrap {
   height: 336px;
@@ -1374,15 +1394,27 @@ footer {
 }
 .footer-logo__link {
     display: block;
-    background: url(../i/markup/footer-logo.png) 19px -2px no-repeat;
+    background: url(../i/markup/logo_down.png) 19px -2px no-repeat;
     height: 64px;
-    transition: background 0.4s ease-out;
-    -webkit-transition: background 0.4s ease-out;
+    position: relative;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
-.footer-logo__link:hover {
-    background: url(../i/markup/logo.png) 16px -2px no-repeat;
-  
+.footer-logo__link span {
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity:  0;
+  background: url(../i/markup/logo_down.png) 19px -72px no-repeat;
 }
+.footer-logo__link:hover span {
+  opacity: 1;
+}
+
 footer .wrap-contact {
   padding: 26px 50px 0 0;
   height: 60px;

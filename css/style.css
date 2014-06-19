@@ -447,7 +447,7 @@ header .contact__item {
     -webkit-transition: background 1s ease-out;
 }
 .goals h4 {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 1.3em;
 }
 .wrap-h3 {
@@ -515,7 +515,7 @@ header .contact__item {
 .call__text strong {
   text-transform: uppercase;
   color: #767676;
-  font-size: 1.1em;
+  font-size: 1em;
   padding: 26px 40px 26px 0;
   line-height: 1.2em;
   display: inline-block;

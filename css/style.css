@@ -94,6 +94,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
  20. PAGE SOLUTIONS2        simple-text section styles
  21. PAGE PORTFOLIO-WORK    portfolio-head__work styles
  22.                        wrap-buttons styles
+ 23. ADDITIONAL STYLES
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1549,4 +1550,50 @@ footer .wrap-contact {
 }
 .social-list__link--facebook span {
   background: url(../i/markup/social-facebook-sprite.png) 0px -70px no-repeat;
+}
+
+/*ADDITIONAL STYLES*/
+
+.upload-link {
+    color: #fff;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 2px;
+    text-decoration: none;
+    bottom: 85px;
+  cursor: pointer;
+    right: 30px;
+}
+.upload-link:hover {
+  color: #fff !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.upload-link:hover .upload-link__txt {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.upload-link__txt {
+    z-index: 1;
+    position: relative;
+    border-bottom: 1px dotted #fff;
+}
+.upload-link:hover .upload-link__txt {
+    color: #fff;
+    cursor: pointer;
+}
+.callback .upload-link__inp {
+    top: -11px;
+    right: 0px;
+    width: 110px;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 50px;
 }

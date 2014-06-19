@@ -1348,6 +1348,16 @@ footer {
     width: 170px;
     padding: 0 0 0 10px;
 }
+.footer-logo__link {
+    display: block;
+    background: url(../i/markup/footer-logo.png) 19px -2px no-repeat;
+    height: 64px;
+    transition: background 0.4s ease-in-out;
+}
+.footer-logo__link:hover {
+    background: url(../i/markup/logo.png) 16px -2px no-repeat;
+  
+}
 footer .wrap-contact {
   padding: 11px 50px 0 0;
   height: 60px;

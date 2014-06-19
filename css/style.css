@@ -209,7 +209,7 @@ input {
   outline: none;
 }
 .with__bottom {
-  background: url(../i/markup/bg-slider.png) no-repeat;
+  background: url(../i/markup/bg-slider.png) repeat-x;
   margin: 8px 0 0 0;
 }
 .about-us, .how_it_work, .why_it_work, .business, .we-are, .clients, .partners {
@@ -392,7 +392,7 @@ header .contact__item {
   height: 20px;}
 /* 4.Slider styles */
 .main-slider {
-    background: url(../i/markup/bg-slider.png) no-repeat;
+    background: url(../i/markup/bg-slider.png) repeat-x;
 }
 .slideshow { 
     margin: 5px auto; 
@@ -1360,6 +1360,7 @@ header .contact__item {
 footer {
   background: url(../i/markup/bg-footer.png) repeat-y;
   height: 100px;
+  background-size: 100%;
   padding: 26px 0 0 0;
 }
 .footer-logo {

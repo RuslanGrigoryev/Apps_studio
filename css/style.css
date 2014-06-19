@@ -211,8 +211,8 @@ input {
     position: absolute;
     bottom: -58px;
     left: 16%;
-    color: rgba(255 , 255, 255, 0.4);
-    text-shadow: 1px 2px 2px #FFF, 0 0 0 #000, 1px 1px 2px #FFF;
+    color: rgba(255 , 255, 255, 0.3);
+    text-shadow: 1px 1px 1px #FFF, 0 0 0 #000, 1px 1px 1px #FFF;
     font-family: 'Myriad Pro Semibold';
 }
 .map-wrap {
@@ -436,11 +436,14 @@ header .contact__item {
   padding: 0px;
 }
 .wrap-goal-text p {
-  font-size: 0.9em;
+  font-size: 14px;
   margin: 0px;
   text-align: left;
   line-height: 1.2em;
+  font-weight: 500;
   padding: 10px 15px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Myriad Pro Regular';
 }
 .goals-image__analitic {
     background-position: 4px 0px;

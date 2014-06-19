@@ -1492,7 +1492,9 @@ footer .wrap-contact {
     display: block;
     height: 50px;
     position: relative;
-    background: url(../i/markup/social.png) no-repeat;
+    -webkit-transition: all 1s ease-out;
+  -moz-transition:    all 1s ease-out;
+  -o-transition:      all 1s ease-out;
 }
 .social-list__link:hover span {
   opacity: 1;
@@ -1503,27 +1505,32 @@ footer .wrap-contact {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../i/markup/social.png) no-repeat;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition:    opacity 0.5s;
-  -o-transition:      opacity 0.5s;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition:    all 1s ease-out;
+  -o-transition:      all 1s ease-out;
 }
-.social-list__link--twitter, .social-list__link--twitter span{
-    background-position: -50px 0px;
+.social-list__link--gplus {
+  background: url(../i/markup/social-google-sprite.png) no-repeat;
 }
-.social-list__link--vk, .social-list__link--vk span{
-    background-position: -100px 0px;
+.social-list__link--gplus span {
+  background: url(../i/markup/social-google-sprite.png) 0px -70px no-repeat;
 }
-.social-list__link--facebook, .social-list__link--facebook span{
-    background-position: -150px 0px;
+.social-list__link--twitter {
+  background: url(../i/markup/social-twitter-sprite.png) no-repeat;
 }
-.social-list__link--twitter:hover span {
-    background-position: -50px 0px;
+.social-list__link--twitter span {
+  background: url(../i/markup/social-twitter-sprite.png) 0px -70px no-repeat;
 }
-.social-list__link--vk:hover span {
-    background-position: -100px 0px;
+.social-list__link--vk {
+  background: url(../i/markup/social-vk-sprite.png) no-repeat;
 }
-.social-list__link--facebook:hover span {
-    background-position: -150px 0px;
+.social-list__link--vk span {
+  background: url(../i/markup/social-vk-sprite.png) 0px -70px no-repeat;
+}
+.social-list__link--facebook {
+  background: url(../i/markup/social-facebook-sprite.png) no-repeat;
+}
+.social-list__link--facebook span {
+  background: url(../i/markup/social-facebook-sprite.png) 0px -70px no-repeat;
 }

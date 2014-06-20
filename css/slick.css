@@ -59,7 +59,7 @@
 }
 .slideshow-works__related .slick-slide img {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 28px;
 }
 .slideshow-works__related .slick-slide {
 	background: url(../i/markup/bg-related-work-img.png) 21px 21px no-repeat;

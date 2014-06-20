@@ -1113,7 +1113,6 @@ header .contact__item {
   left: 78px;
 }
 .punkt-list__item--inner__item {
-    /* padding: 0 5px; */
     list-style: disc;
     margin: 8px 0px 25px 42px;
     color: #a3a3a3;

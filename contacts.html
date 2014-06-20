@@ -5,34 +5,8 @@
 	<title>Apps studio</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript"
-	      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDajudjBuhEL2RSZ6CFyU0D_8gR6eN2aQE&sensor=true">
-	    </script>
-	    <script type="text/javascript">
-	    function initialize() {
-	      var mapOptions = {
-	        zoom: 5,
-	        center: new google.maps.LatLng(53, 35)
-	      }
-	      var map = new google.maps.Map(document.getElementById('map_canvas'),
-	                                    mapOptions);
-
-	      var image = 'i/markup/flag.png';
-	      var myLatLngKiev = new google.maps.LatLng(50.164366, 26.482806);
-	      var beachMarkerKiev = new google.maps.Marker({
-	          position: myLatLngKiev,
-	          map: map,
-	          icon: image
-	      });
-
-	      google.maps.event.addListener(beachMarkerKiev, 'click', function() {
-	          map.setZoom(8);
-	        });
-
-	    }
-	    </script>
 </head>
-<body onload="initialize()">
+<body>
 	
 	<header>
 
@@ -102,7 +76,11 @@
 	
 	<section class="header-img">
 
-		<div class="map-wrap" id="map_canvas"></div>
+		<div class="map-wrap">
+
+			<img src="i/map.png" alt="static-google-map">
+
+		</div>
 
 	</section>
 

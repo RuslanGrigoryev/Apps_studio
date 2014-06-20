@@ -262,7 +262,7 @@ input {
     z-index: 300;
 }
 .map-wrap {
-  height: 336px;
+  height: auto;
 }
 .gradient {
   background: -webkit-linear-gradient(#666464, #c3c1c1);
@@ -1138,6 +1138,10 @@ header .contact__item {
     width: 30%;
     text-align: left;
     vertical-align: top;
+}
+.map-wrap img{
+  width: 100%;
+  height: auto;
 }
 .contacts-list {
     padding: 0px 0 0 70px;

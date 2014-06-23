@@ -593,11 +593,14 @@ header .contact__item {
     padding: 0 0 26px 0 !important;
 }
 .how_it_work .punkt-list__item--inner {
-    height: 424px;
-    background: url(../i/markup/bg-list.png) no-repeat;
+    /* height: 424px; */
+    background: url(../i/markup/bg-list-att.png) no-repeat;
     width: 1047px;
+    background-size: 100%;
     left: 92px;
-    padding: 100px 0 0 0;
+    padding: 100px 0 5px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .how_it_work h1 span {
     padding: 0 0 36px 0;

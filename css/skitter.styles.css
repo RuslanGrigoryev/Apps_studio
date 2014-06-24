@@ -4,7 +4,7 @@
 	position: relative;
 	/* width: 800px; */
 	/* height: 300px; */
-	background: #000;
+	/* background: #000; */
 }
 
 .box_skitter img {
@@ -15,12 +15,12 @@
 }
 
 .box_skitter .container_skitter {
-	overflow: hidden;
+	/* overflow: hidden; */
 	position: relative;
 }
 
 .box_skitter .image {
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .box_skitter .image img {

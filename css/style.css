@@ -264,6 +264,15 @@ input {
 .map-wrap {
   height: auto;
 }
+.text-c {
+  text-align: center;
+}
+.text-r {
+  text-align: right;
+}
+.text-l {
+  text-align: left;
+}
 .gradient {
   background: -webkit-linear-gradient(#666464, #c3c1c1);
   -webkit-background-clip: text;
@@ -1103,7 +1112,6 @@ header .contact__item {
 .punkt-list__item--inner {
   background: url(../i/markup/bg-inner-list.png) no-repeat;
   margin: 0 12px 0 10px;
-  /* height: 422px; */
   padding: 71px 30px 0 0;
   position: relative;
   top: -71px;
@@ -1136,16 +1144,34 @@ header .contact__item {
     width: 30%;
     text-align: left;
     vertical-align: top;
+    margin: 7px 0 0 0;
+}
+.wrap-left, .wrap-right {
+  width: 442px;  
+  height: 333px;
+  float: left;
+  margin: 0 17px;
+  box-sizing: border-box;
+}
+.wrap-right {
+  padding-left: 56px;
+}
+.call__btn__text {
+  font-size: 26px;
+}
+.contacts-list__right__text-r {
+    padding: 0 66px 0 0 !important;
 }
 .map-wrap img{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .contacts-list {
     padding: 0px 0 0 70px;
+    background: -webkit-linear-gradient(#CAC1C1, #5f5f5f);      -webkit-background-clip: text;      -webkit-text-fill-color: transparent;      color: #5f5f5f;
 }
 .contacts-list__right {
-    padding: 0 0 0 108px;
+    padding: 0 0 0 0px;
 }
 .contacts__item {
     font-size: 1.3em;
@@ -1153,43 +1179,44 @@ header .contact__item {
     color: #BEB2B2;
     letter-spacing: 0.4px;
 }
-.contacts__item:nth-child(3) {
-  margin: 0 0 33px 0;
-}
 .contact__item__email {
     display: inline;
     font-size: 1em;
 }
 .callback {
-  background: url(../i/markup/bg-form.png) no-repeat;
-  width: 480px;
-  height: 670px;
+  background: url(../i/markup/bg-form-contacts.png) no-repeat;
+  width: 1009px;
+  height: 403px;
   position: relative;
   background-size: 100% 100%;
   text-align: center;
-  margin: 60px auto 60px;
-  padding: 33px 0 0 0;
+  margin: 33px auto 123px;
+  padding: 10px 0 0 0;
   color: #676767;
+  font-family: 'Myriad Pro Semibold';
   border-radius: 40px;
 }
 .callback button {
-    left: 67px;
-    bottom: -37px;
+    left: 50%;
+    margin: 0 0 0 -173px;
+    bottom: -46px;
     height: 83px;
     background-size: 100%;
     font-size: 1.5em;
-    width: 337px;
+    width: 342px;
 }
 .callback input {
   width: 442px;
   height: 60px;
   background: url(../i/markup/bg-inputs.png) repeat;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 21px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 15px;
-  margin: 10px 0 10px 0;
-  color: #676767;
+  margin: 10px 0 8px 0;
+  font-family: 'Myriad Pro Semibold';
+  color: #666;
 }
 .callback textarea {
   background: url(../i/markup/bg-inputs.png) repeat;
@@ -1197,12 +1224,17 @@ header .contact__item {
   text-transform: uppercase;
   margin: 10px 0 10px 0;
   color: #676767;
+  font-family: 'Myriad Pro Semibold';
+  height: 226px;
   width: 442px;
-  font-family: 'Myriad Pro Regular', Verdana, Arial, sans-serif;
+  padding: 21px 0 0 0;
+  box-sizing: border-box;
   border:none;
   outline: none;
+  letter-spacing: 1px;
   resize: none;
   font-size: 1.5em;
+  font-size: 21px;
   border-radius: 15px;
 }
 /*18.portfolio-works*/
@@ -1565,14 +1597,18 @@ footer .wrap-contact {
     position: absolute;
     padding-bottom: 2px;
     text-decoration: none;
-    bottom: 85px;
-  cursor: pointer;
-    right: 30px;
+    bottom: 46px;
+  
+    cursor: pointer !important;
+    left: 50%;
+    margin: 0 0 0 -79px;
+    border-bottom: 1px dashed #5f5f5f;
 }
 .upload-link:hover {
   color: #fff !important;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed #5f5f5f;
 }
 .upload-link:hover .upload-link__txt {
   color: #fff;
@@ -1582,20 +1618,24 @@ footer .wrap-contact {
 .upload-link__txt {
     z-index: 1;
     position: relative;
-    border-bottom: 1px dotted #fff;
+    cursor: pointer;
+    font-size: 21px;
+    letter-spacing: 1.3px;
+    background: -webkit-linear-gradient(#CAC1C1, #5f5f5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #5f5f5f;
 }
 .upload-link:hover .upload-link__txt {
-    color: #fff;
     cursor: pointer;
 }
 .callback .upload-link__inp {
     top: -11px;
     right: 0px;
-    width: 110px;
+    width: 140px;
     z-index: 2;
+    height: 25px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    filter: alpha(opacity=0);
-    font-size: 50px;
 }

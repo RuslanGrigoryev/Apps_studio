@@ -3,7 +3,7 @@
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
 .slideshow-works .slick-list {
-	padding: 65px 10px 0 135px !important;
+	padding: 65px 3px 0 37px !important;
 	height: 521px !important;
 }
 .slick-list:focus { outline: none; }
@@ -14,7 +14,7 @@
 .slick-track:before, .slick-track:after { content: ""; display: table; }
 .slick-track:after { clear: both; }
 .slick-loading .slick-track { visibility: hidden; }
-.portfolio-works .slick-slide {width: 190px !important; }
+.portfolio-works .slick-slide {/* width: 195px !important; */ }
 .related-works .slick-slide, .portfolio-works .slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
 .slick-slide img { display: block; }
 .slick-slide.slick-loading img { display: none; }
@@ -25,7 +25,7 @@
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 28px; padding: 0 !important; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -53px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -9px; padding: 0; border: none; outline: none; }
+.slick-prev, .slick-next { position: absolute; display: block; height: 47px; width: 28px; padding: 0 !important; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; bottom: -23px; background: url(../i/markup/slideshow-arrows.png) no-repeat; margin-top: -9px; padding: 0; border: none; outline: none; }
 .slick-prev:focus, .slick-next:focus { outlinepadding: 80px 100px;padding: 80px 100px;none; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
@@ -49,8 +49,8 @@
 .slick-center {
 	-webkit-transform: scale(1) !important;
 	transform: scale(1) !important;
-	width: 210px !important;
-	margin: 0 40px !important;
+	/* width: 235px !important; */
+	/* margin: 0 20px !important; */
 }
 .slick-center img {
 	color: #e67e22;

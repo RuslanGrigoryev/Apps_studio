@@ -376,27 +376,19 @@ header .contact__item {
     position: relative;
     text-transform: uppercase;
     font-size: 18px;
-    background: -webkit-linear-gradient(#4b4b4b, #646464);  
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;  
-    color: #4b4b4b;
-    transition: all 2s ease-out;
-    -webkit-transition: all 2s ease-out;
+    color: #4b4b4b;  
+    -webkit-transition: color 1.2s ease-out;    
+    transition: color 1.2s ease-out;
 }
 .main-menu__item:hover {
   text-decoration: none;
   background: url(../i/markup/sprite-main-menu.png) center -53px no-repeat;
-
 }
 .main-menu__link:hover, .main-menu__link--active {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   text-decoration: none;
-  background: -webkit-linear-gradient(#666464, #9634e6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(#666464, #9634e6); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   color: #9843DD;
 }
 .main-menu__link:hover:after, .main-menu__link.main-menu__link--active:after {
@@ -462,6 +454,7 @@ header .contact__item {
     height: 200px;
     width: 200px;
     position: relative;
+    display: block;
     margin: 0 auto;
     margin-bottom: 10px;
     transition: all 1s ease-out;
@@ -1070,6 +1063,9 @@ header .contact__item {
     height: 109px;
     font-size: 5.6em;
     opacity: 0.1;
+}
+.punkt-list__item--inner--active .punkt-list__item--inner {
+  display: block;
 }
 .punkt-list__item--inner--active .punkt-list__link {
     background: url(../i/markup/detail-link__active.png) 0px 13px no-repeat;  

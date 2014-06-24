@@ -985,6 +985,7 @@ header .contact__item {
     height: 196px;
     display: inline-block;
     background: url(../i/markup/sprite-works2.png) no-repeat;
+    vertical-align: top;
 }
 .punkt-list__img__idea {
     background-position: -680px -3px;
@@ -1007,11 +1008,11 @@ header .contact__item {
 .punkt-list__wrap-text {
     display: inline-table;
     position: relative;
-    vertical-align: 90px;
+    vertical-align: middle;
     background: url(../i/markup/bg-how-it-works2.png) no-repeat;
     width: 825px;
     height: 149px;
-    margin: 0 0 0 20px;
+    margin: 20px 0 0 20px;
 }
 .how_it_work_2 .punkt-list__wrap-text em {
     position: absolute;

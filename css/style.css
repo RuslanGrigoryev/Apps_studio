@@ -847,8 +847,8 @@ header .contact__item {
     padding: 0 0 39px 0;
 }
 .classification .punkt-list__item {
-    margin: 0 0 17px 0px !important;
-    width: 623px;
+    margin: 0 0 18px 0px !important;
+    width: 620px;
 }
 .classification .punkt-list__wrap-text {
   margin: 0 0 0 18px;
@@ -857,13 +857,13 @@ header .contact__item {
   margin: 0 0 0 -20px;
 }
 .classification .clients-punkt-list p {
-  padding: 39px 0 0 33px;
+  padding: 29px 10px 0 33px;
   letter-spacing: 0px;
 }
 .classification .clients-punkt-list em {
   line-height: 26px;
-  margin: 26px 0 0 0;
-  letter-spacing: 1px;
+  margin: 16px 0 0 0;
+  letter-spacing: 0.5px;
 }
 .classification .punkt-list__link {
     height: 26px;
@@ -1296,7 +1296,7 @@ header .contact__item {
   font-size: 32px;
   text-transform: uppercase;
   color: #767676;
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   background: url(../i/markup/bg-line-solutions2.png) left bottom no-repeat;
   display: block;
 }
@@ -1372,7 +1372,7 @@ header .contact__item {
     text-align: left;
 }
 .simple-text-wrap-list {
-    padding: 0 140px 0 90px;
+    padding: 0 140px 20px 90px;
 }
 .simple-text-wrap-item {
     list-style: disc;

@@ -3,7 +3,7 @@
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
 .slideshow-works .slick-list {
-	padding: 65px 3px 0 37px !important;
+	padding: 65px 3px 0 41px !important;
 	height: 521px !important;
 }
 .slick-list:focus { outline: none; }

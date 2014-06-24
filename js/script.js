@@ -1,15 +1,9 @@
 $(function() {
-	/*Main slider*/
-    $(".slideshow").find(".item:gt(0)").hide();
+	
+    if ( $("#slider").length) {
+        $("#slider").skitter({ animation: "cubeSize", hideTools: true, navigation: false, numbers: false });
+    }
 
-    setInterval(function() { 
-      $('.slideshow').find(".item:first")
-        .fadeOut(2000)
-        .next()
-        .fadeIn(2000)
-        .end()
-        .appendTo('.slideshow');
-    },  6000);
 
     /*Slide punkts on page how_it_works_2*/
 

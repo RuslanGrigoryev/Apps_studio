@@ -414,7 +414,7 @@ header .contact__item {
     padding: 0 10px;  
 }
 .slideshow .item { 
-    position: absolute;
+    /* position: absolute; */
 }
 .item__img {
   height: 330px;
@@ -1029,16 +1029,16 @@ header .contact__item {
     background: url(../i/markup/sprite-works2.png) no-repeat;
 }
 .punkt-list__img__idea {
-    background-position: 0px -3px;
+    background-position: -680px -3px;
 }
 .punkt-list__img__strat {
-    background-position: -220px -3px;
+    background-position: 0px -3px;
 }
 .punkt-list__img__uxui {
-    background-position: -451px -3px;
+    background-position: -220px -3px;
 }
 .punkt-list__img__support {
-    background-position: -680px -3px;
+    background-position: -450px -3px;
 }
 .punkt-list__img__seo {
     background-position: -900px -3px;

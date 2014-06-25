@@ -226,7 +226,7 @@
 			</div>
 
 			<div class="call__btn">
-				<button><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
+				<button id="popup_btn"><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
 			</div>
 
 		</div>
@@ -301,6 +301,36 @@
 
 	</footer>
 	
+	<div class="popup">
+		
+		<form action="#" class="callback">
+		
+			<div class="wrap-left">
+				
+				<div class="wrap-input__required"><input type="text" placeholder="имя"></div>
+				<div class="wrap-input__required"><input type="text" placeholder="телефон/почта"></div>
+				<input type="text" placeholder="компания/должность">
+				<input type="text" placeholder="сфера деятельности">
+				
+			</div>
+
+			<div class="wrap-right">
+				
+				<input type="text" placeholder="сайт">
+				<textarea name="tz" id="tz" cols="30" rows="7" placeholder="описание идеи"></textarea>
+				
+			</div>
+			
+			<p class="warning">Поля отмеченные звездочкой - обязательны для заполнения</p>
+
+			<button><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
+			
+		</form>
+
+		<div id="mask"></div>
+
+	</div>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/libs/jquery.easing.1.3.js"></script>
 	<script src="js/libs/jquery.skitter.min.js"></script>

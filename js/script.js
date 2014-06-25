@@ -77,5 +77,23 @@ $(function() {
             autoplay: true
           });
         }
+
+        /*POPUP STYLES*/
+         $('#mask').on('click', function(e) {
+            console.log(e.target);            
+            unloadPopupBox();
+        });
+        
+        $('#popup_btn').on('click', function() {
+            loadPopupBox();
+        });
+
+        function unloadPopupBox() {    // TO Unload the Popupbox
+            $('.popup').fadeOut("slow");
+        }    
+        
+        function loadPopupBox() {    // To Load the Popupbox
+            $('.popup').fadeIn("slow");       
+        }        
 });
 

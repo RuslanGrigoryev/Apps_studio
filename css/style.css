@@ -93,6 +93,8 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
  21. PAGE PORTFOLIO-WORK    portfolio-head__work styles
  22.                        wrap-buttons styles
  23. ADDITIONAL STYLES
+ 24. POPUP STYLES
+ 25. MEDIA STYLES
 */
 /* 1. Reset styles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -150,6 +152,7 @@ body {
   font-size: 16px;
   line-height: 1;
   color: #767676;
+  position: relative;
   min-width: 1286px;
 }
 a {
@@ -255,7 +258,7 @@ input {
 }
 .call__btn button .call__btn__text {
     position: absolute;
-    top: 34px;
+    top: 37px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1110,6 +1113,8 @@ header .contact__item {
 }
 .callback .call__btn__text {
   font-size: 26px;
+  margin: 6px 0 0 0;
+  display: block;
 }
 .contacts-list__right__text-r {
     padding: 0 66px 0 0 !important;
@@ -1590,7 +1595,59 @@ footer .wrap-contact {
     cursor: pointer;
     opacity: 0;
 }
-
+/*24. POPUP STYLES */
+.popup {
+  display: none;
+}
+.popup, #mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9997;
+}
+#mask {
+  background: rgba(0,0,0, 0.85);
+  z-index: 9998;
+}
+.popup .callback {
+  position:fixed; 
+  z-index: 9999;
+  left: 50%;
+  margin: -200px 0 0 -505px;
+  top: 50%;
+  background: url(../i/markup/bg-popup.png) no-repeat;
+}
+.warning {
+  text-align: center;
+  font-family: Myriad Pro, Arial, sans-serif;
+  font-size: 17px;
+  color: #4B4949;
+  position: relative;
+}
+.warning:before {
+  content: "*";
+  position: absolute;
+  color: #f00;
+  top: -5px;
+  left: 26%;
+  font-size: 20px;
+  z-index: 99999;
+}
+.wrap-input__required:before {
+  content: "*";
+  position: absolute;
+  color: #f00;
+  top: 8px;
+  left: 0;
+  font-size: 20px;
+  z-index: 99999;
+}
+.wrap-input__required {
+  position: relative;
+}
+/*25. MEDIA STYLES*/
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   .callback {

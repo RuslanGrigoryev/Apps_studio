@@ -1635,17 +1635,9 @@ footer .wrap-contact {
   font-size: 20px;
   z-index: 99999;
 }
-.wrap-input__required:before {
-  content: "*";
-  position: absolute;
-  color: #f00;
-  top: 8px;
-  left: 0;
-  font-size: 20px;
-  z-index: 99999;
-}
 .wrap-input__required {
-  position: relative;
+    background: url(../i/markup/required.png) left 10px no-repeat;
+
 }
 /*25. MEDIA STYLES*/
 /* iPads (landscape) ----------- */

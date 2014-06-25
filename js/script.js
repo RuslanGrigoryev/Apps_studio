@@ -89,11 +89,11 @@ $(function() {
         });
 
         function unloadPopupBox() {    // TO Unload the Popupbox
-            $('.popup').fadeOut("slow");
+            $('.popup').fadeOut("fast");
         }    
         
         function loadPopupBox() {    // To Load the Popupbox
-            $('.popup').fadeIn("slow");       
+            $('.popup').fadeIn("fast");       
         }        
 });
 

@@ -493,7 +493,7 @@ header .contact__item {
   text-align: left;
   line-height: 1.2em;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 17px 18px;
   color: rgba(255, 255, 255, 0.4);
   font-family: 'Myriad Pro Regular';
 }
@@ -1108,7 +1108,7 @@ header .contact__item {
 .wrap-right {
   padding-left: 46px;
 }
-.call__btn__text {
+.callback .call__btn__text {
   font-size: 26px;
 }
 .contacts-list__right__text-r {
@@ -1141,7 +1141,6 @@ header .contact__item {
   height: 403px;
   position: relative;
   background-size: 100% 100%;
-  /* text-align: center; */
   margin: 33px auto 123px;
   padding: 10px 0 0 0;
   color: #676767;

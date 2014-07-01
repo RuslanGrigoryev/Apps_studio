@@ -441,7 +441,7 @@ header .contact__item {
     padding: 0 10px;  
 }
 .slideshow .item { 
-    /* position: absolute; */
+    position: absolute;
 }
 .item__img {
   height: 330px;

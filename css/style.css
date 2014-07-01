@@ -1153,6 +1153,9 @@ header .contact__item {
   font-family: 'Myriad Pro Semibold';
   border-radius: 40px;
 }
+.callback_contacts {
+  height: 420px;
+}
 .callback button {
     left: 50%;
     margin: 0 0 0 -173px;
@@ -1554,8 +1557,7 @@ footer .wrap-contact {
     position: absolute;
     padding-bottom: 2px;
     text-decoration: none;
-    bottom: 46px;
-  
+    bottom: 40px;
     cursor: pointer !important;
     left: 50%;
     margin: 0 0 0 -79px;
@@ -1625,6 +1627,7 @@ footer .wrap-contact {
   font-family: Myriad Pro, Arial, sans-serif;
   font-size: 17px;
   color: #4B4949;
+  display: none;
   position: relative;
 }
 .warning:before {

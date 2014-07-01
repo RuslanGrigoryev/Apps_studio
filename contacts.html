@@ -105,12 +105,12 @@
 		</div>
 	</section>
 	
-	<form action="#" class="callback">
+	<form action="#" class="callback callback_contacts">
 		
 		<div class="wrap-left">
 			
-			<input type="text" placeholder="имя">
-			<input type="text" placeholder="телефон/почта">
+			<div class="wrap-input__required"><input type="text" placeholder="имя" id="name"></div>
+			<div class="wrap-input__required"><input type="text" placeholder="телефон/почта" id="mail"></div>
 			<input type="text" placeholder="компания/должность">
 			<input type="text" placeholder="сфера деятельности">
 			
@@ -127,8 +127,10 @@
 		    <span class="upload-link__txt">Прикрепить TЗ</span>
 		    <input class="upload-link__inp" name="photo" type="file" accept=".jpg,.jpeg,.gif" />
 		</a>
+		
+		<p class="warning">Поля отмеченные звездочкой - обязательны для заполнения</p>
 
-		<button><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
+		<button type="submit" id="submitBtn"><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
 		
 	</form>
 

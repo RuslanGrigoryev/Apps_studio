@@ -101,7 +101,20 @@ $(function() {
             return false;
         }); 
 
+        $('#submitBtn').on('click', function (event) {
+            event.preventDefault();
+            var nameVal = $('#name').val(),
+                mailVal = $('#mail').val();
+            console.log($('#name').val() + ' --- ' + $('#mail').val());
 
+            if (nameVal === '' || mailVal === '' ) {
+                $('.warning').show();
+                return false;
+            }
+            else {
+                unloadPopupBox();
+            }
+        });
         
 });
 

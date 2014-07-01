@@ -94,6 +94,11 @@ $(function() {
         
         function loadPopupBox() {    // To Load the Popupbox
             $('.popup').fadeIn("fast");       
-        }        
+        }       
+
+        $('#moreLink').on('click', function(event) {
+            event.preventDefault();
+            return false;
+        }); 
 });
 

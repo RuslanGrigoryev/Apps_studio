@@ -18,8 +18,8 @@ $(function() {
         var $this = $(this),
             $text = $this.parent().next(),
             $parent = $this.closest('li');
-    	$texts.not($text).slideUp();
-    	$text.stop(true, false).slideToggle();
+    	$texts.not($text).slideUp(1000);
+    	$text.stop(true, false).slideToggle(1000)
         $items.not($parent).removeClass('punkt-list__item--inner--active');
         $parent.toggleClass('punkt-list__item--inner--active');
     });

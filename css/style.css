@@ -620,8 +620,9 @@ header .contact__item {
     background-size: 100%;
     left: 89px;
     padding: 100px 0 5px 0;
+    overflow: hidden;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px; */;
 }
 .how_it_work h1 span {
     padding: 0 0 36px 0;
@@ -875,6 +876,7 @@ header .contact__item {
     width: 110px;
     height: 110px;
     background: url(../i/markup/sprite-clients.png) no-repeat;
+    
 }
 .clients-list__item__link--night2 {
   background-position: -1069px -8px;
@@ -1284,8 +1286,10 @@ header .contact__item {
   text-align: center;
   background: url(../i/markup/bg-more-link.png) center center no-repeat;
   box-sizing: border-box;
-  padding: 31px 0;
+  padding: 29px 0;
+  font-family: 'Myriad Pro Bold';
   color: #fff;
+  font-size: 18px;
 }
 .more-link:hover {
   text-decoration: none;

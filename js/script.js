@@ -116,11 +116,12 @@ $(function() {
             }
         });
 
-        
-        var offset = $(".punkt-list__item--inner--active").offset(),
-            offsetTop = offset.top;
+        if ($(".punkt-list__item--inner--active").length) {
+            var offset = $(".punkt-list__item--inner--active").offset(),
+                offsetTop = offset.top;
 
             $("html, body").animate({ scrollTop: offsetTop }, "slow");
+        }
         
 });
 

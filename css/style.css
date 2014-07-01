@@ -294,6 +294,12 @@ input {
   font-size: 1.3em;
   color: #9843DD;
 }
+*::-webkit-input-placeholder {
+  color: #666;
+}
+input::-moz-placeholder {
+  color: #666;
+}
 /*3.Header styles*/
 header {
   height: 138px;
@@ -1167,7 +1173,7 @@ header .contact__item {
   border-radius: 15px;
   margin: 10px 0 8px 0;
   font-family: 'Myriad Pro Semibold';
-  color: #666;
+  color: #CCC6C6;
 }
 .callback textarea {
   background: url(../i/markup/bg-inputs.png) repeat;

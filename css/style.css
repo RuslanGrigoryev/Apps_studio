@@ -413,7 +413,7 @@ header .contact__item {
   color: #9843DD;
 }
 .main-menu__link:hover:after, .main-menu__link.main-menu__link--active:after {
-  background: url(../i/markup/bg-main-menu-hover.png) -17px -4px no-repeat;
+  background: url(../i/markup/bg-main-menu-hover.png) no-repeat;
 }
 .main-menu__link:after {
   content: "";
@@ -422,7 +422,10 @@ header .contact__item {
   left: 45%;
   width: 20px;
   background: url(../i/markup/after-main-menu.png) no-repeat;
-  height: 20px;}
+  height: 20px;
+  transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
 /* 4.Slider styles */
 .main-slider {
     background: url(../i/markup/bg-slider.png) repeat-x;

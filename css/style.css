@@ -618,7 +618,7 @@ header .contact__item {
     background: url(../i/markup/bg-list-att.png) no-repeat;
     width: 1047px;
     background-size: 100%;
-    left: 92px;
+    left: 89px;
     padding: 100px 0 5px 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -1045,9 +1045,6 @@ header .contact__item {
 .punkt-list__item--inner--active .punkt-list__item--inner {
   display: block;
 }
-.punkt-list__item--inner--active .punkt-list__link {
-    background: url(../i/markup/detail-link__active.png) 0px 13px no-repeat;  
-}
 .punkt-list__wrap-text p {
     display: table-cell;
     vertical-align: middle;
@@ -1068,9 +1065,14 @@ header .contact__item {
     padding: 0 0 10px 0;
     height: 50px;
     background: url(../i/markup/detail-link.png) 0px 10px no-repeat;
+    transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .punkt-list__link:hover {
   text-decoration: none;
+  background: url(../i/markup/detail-link__hover__noactive.png) 0px 10px no-repeat;
 } 
 .punkt-list__item--inner {
     display: none;

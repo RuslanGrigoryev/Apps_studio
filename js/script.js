@@ -1,5 +1,7 @@
 $(function() {
 	
+    $('.anim').show().addClass('fadeIn animated');
+
     if ( $("#slider").length) {
         $("#slider").skitter({ animation: "cubeSize", hideTools: true, navigation: false, numbers: false });
     }
@@ -115,13 +117,6 @@ $(function() {
                 unloadPopupBox();
             }
         });
-
-        if ($(".punkt-list__item--inner--active").length) {
-            var offset = $(".punkt-list__item--inner--active").offset(),
-                offsetTop = offset.top;
-
-            $("html, body").animate({ scrollTop: offsetTop }, "slow");
-        }
         
 });
 

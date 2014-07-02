@@ -127,6 +127,13 @@ $(function() {
                 unloadPopupBox();
             }
         });
+
+        if ($(".punkt-list__item--inner--active--slide").length) {
+            var offset    = $(".punkt-list__item--inner--active--slide").offset(),
+                offsetTop = offset.top;
+
+            $("html, body").animate({ scrollTop: offsetTop }, "slow");
+        }
         
         $('.slick-slide').find('a').on('click', function () {
             return false;

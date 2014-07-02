@@ -1496,7 +1496,7 @@ footer .wrap-contact {
 }
 .footer-menu {
     float: left;
-    margin-left: 102px;
+    margin: 10px 0 0 102px;
 }
 .footer-menu__list {
     height: 90px;

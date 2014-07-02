@@ -128,5 +128,8 @@ $(function() {
             }
         });
         
+        $('.slick-slide').find('a').on('click', function () {
+            return false;
+        });
 });
 

@@ -135,7 +135,7 @@ $(function() {
             $("html, body").animate({ scrollTop: offsetTop }, "slow");
         }
         
-        $('.slick-slide').find('a').on('click', function () {
+        $('.portfolio-works .slick-slide').find('a').on('click', function () {
             return false;
         });
 });

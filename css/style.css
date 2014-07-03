@@ -993,6 +993,51 @@ header .contact__item {
 }
 .partners-list__item__link {
     display: block;
+    transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+    position: relative;
+}
+.partners-list__item__link:hover .empty-partners {
+  opacity: 1;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+.partners-list__item__link:hover .partners-list__item__link__img {
+  opacity: 0;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+.empty-partners {
+  background: url(../i/markup/partners-hover.png) no-repeat;
+  opacity: 0;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.empty1 {
+  background: url(../i/markup/partners-hover.png) 0px -5px no-repeat;
+}
+.empty2 {
+    background: url(../i/markup/partners-hover.png) -201px -5px no-repeat;
+}
+.empty3 {
+    background: url(../i/markup/partners-hover.png) -402px -5px no-repeat;
+}
+.empty4 {
+    background: url(../i/markup/partners-hover.png) -601px -5px no-repeat;  };
 }
 /* 16. PAGE HOW IT WORKS2 Section header-img. */
 .punkt-list {

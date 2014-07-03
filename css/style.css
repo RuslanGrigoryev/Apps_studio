@@ -615,7 +615,8 @@ header .contact__item {
     padding: 0 0 26px 0 !important;
 }
 .how_it_work .punkt-list__item--inner {
-    background: url(../i/markup/bg-list-att.png) no-repeat;
+    background-image: url(../i/markup/bg-list-att.png), url(../i/markup/bg-bot.png);
+    background-position: top center, bottom center;
     width: 1047px;
     background-size: 100%;
     left: 89px;

@@ -1216,6 +1216,10 @@ header .contact__item {
 .callback_contacts .contacts_submit {
   background: url(../i/markup/forma_button-contacts.png) top center no-repeat;
 }
+.callback_contacts .wrap-upload-link {
+    padding: 0;
+  
+}
 .contacts_submit .empty {
   position: absolute;
   top: 0;
@@ -1701,7 +1705,7 @@ footer .wrap-contact {
     width: 31px;
     height: 34px;
     left: 38%;
-    top: 8px;
+    top: -3px;
     z-index: 99999;
 }
 .upload-link:hover {

@@ -1455,14 +1455,66 @@ header .contact__item {
 .available-btn {
     display: inline-block;
     margin: 0 5px;
+    width: 160px;
+    height: 47px;
+    position: relative;
+}
+.btn-store {
+  display: block;
+  width: 160px;
+    height: 47px;
+}
+.btn-store .empty {
+    transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+}
+.btn-google {
+    background: url(../i/markup/gp.png) no-repeat;
+}
+.btn-apple {
+  background: url(../i/markup/ap.png) no-repeat;
+}
+.btn-win {
+  background: url(../i/markup/win.png) no-repeat;
+}
+.btn-store:hover .empty {
+  opacity: 1
+}
+.btn-google .empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 299;
+  opacity: 0;
+  background: url(../i/markup/gp.png) 0px -52px no-repeat;
+}
+.btn-apple .empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 299;
+  background: url(../i/markup/ap.png) 0px -53px no-repeat;
+  opacity: 0;
+}
+.btn-win .empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 299;
+  background: url(../i/markup/win.png) 0px -52px no-repeat;
+  opacity: 0;
 }
 .available-btn span {
   display: block;
   text-align: left;
-}
-.available-btn img {
-  width: 160px;
-  height: 47px;
 }
 .related-works {
   padding: 45px 0 0 0;

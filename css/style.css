@@ -874,104 +874,137 @@ header .contact__item {
 .clients-list__item__link {
     display: inline-block;
     width: 110px;
+    position: relative;
     height: 110px;
-    background: url(../i/markup/sprite-clients.png) no-repeat;
-    
 }
-.clients-list__item__link--night2 {
+.clients-list__item__link:hover .image {
+  opacity: 0;
+}
+.clients-list__item__link:hover .image-hover {
+  opacity: 1;
+}
+.clients-list__item__link .image {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 299;
+  background: url(../i/markup/sprite-clients.png) no-repeat;
+  transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.clients-list__item__link .image-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: url(../i/markup/sprite-clients.png) no-repeat;
+  transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.clients-list__item__link--night2 .image {
   background-position: -1069px -8px;
 }
-.clients-list__item__link--forum {
+.clients-list__item__link--forum .image {
   background-position: -1069px -168px;
 }
-.clients-list__item__link--spa {
+.clients-list__item__link--spa .image {
     background-position: -9px -8px;
 }
-.clients-list__item__link--clever {
+.clients-list__item__link--clever .image {
     background-position: -160px -8px;
 }
-.clients-list__item__link--three {
+.clients-list__item__link--three .image {
     background-position: -309px -8px;
 }
-.clients-list__item__link--roll {
+.clients-list__item__link--roll .image {
     background-position: -459px -8px;
 }
-.clients-list__item__link--anti-taxi {
+.clients-list__item__link--anti-taxi .image {
     background-position: -609px -8px;
 }
-.clients-list__item__link--taxi {
+.clients-list__item__link--taxi .image {
     background-position: -759px -8px;
 }
-.clients-list__item__link--key {
+.clients-list__item__link--key .image {
     background-position: -909px -8px;
 }
-.clients-list__item__link--twit {
+.clients-list__item__link--twit .image {
     background-position: -9px -168px;
 }
-.clients-list__item__link--party {
+.clients-list__item__link--party .image {
     background-position: -159px -168px;
 }
-.clients-list__item__link--stone {
+.clients-list__item__link--stone .image {
     background-position: -309px -168px;
 }
-.clients-list__item__link--gds {
+.clients-list__item__link--gds .image {
     background-position: -459px -168px;
 }
-.clients-list__item__link--bedroom {
+.clients-list__item__link--bedroom .image {
     background-position: -609px -168px;
 }
-.clients-list__item__link--numone {
+.clients-list__item__link--numone .image {
     background-position: -909px -168px;
 }
-.clients-list__item__link--tax {
+.clients-list__item__link--tax .image {
     background-position: -759px -168px;
 }
-.clients-list__item__link--night2:hover {
+.clients-list__item__link--night2 .image-hover {
   background-position: -1069px -320px;
 }
-.clients-list__item__link--forum:hover {
+.clients-list__item__link--forum .image-hover {
   background-position: -1069px -480px;
 }
-.clients-list__item__link--spa:hover {
+.clients-list__item__link--spa .image-hover {
     background-position: -8px -321px;
 }
-.clients-list__item__link--clever:hover {
+.clients-list__item__link--clever .image-hover {
     background-position: -158px -321px;
 }
-.clients-list__item__link--three:hover {
+.clients-list__item__link--three .image-hover {
     background-position: -308px -321px;
 }
-.clients-list__item__link--roll:hover {
+.clients-list__item__link--roll .image-hover {
     background-position: -458px -321px;
 }
-.clients-list__item__link--anti-taxi:hover {
+.clients-list__item__link--anti-taxi .image-hover {
     background-position: -608px -321px;
 }
-.clients-list__item__link--taxi:hover {
+.clients-list__item__link--taxi .image-hover {
     background-position: -758px -321px;
 }
-.clients-list__item__link--key:hover {
+.clients-list__item__link--key .image-hover {
     background-position: -908px -321px;
 }
-.clients-list__item__link--twit:hover {
+.clients-list__item__link--twit .image-hover {
     background-position: -8px -481px;
 }
-.clients-list__item__link--party:hover {
+.clients-list__item__link--party .image-hover {
     background-position: -158px -481px;
 }
-.clients-list__item__link--stone:hover {
+.clients-list__item__link--stone .image-hover {
     background-position: -308px -481px;
 }
-.clients-list__item__link--gds:hover {
+.clients-list__item__link--gds .image-hover {
     background-position: -458px -481px;
 }
-.clients-list__item__link--bedroom:hover {
+.clients-list__item__link--bedroom .image-hover {
     background-position: -608px -481px;
 }
-.clients-list__item__link--numone:hover {
+.clients-list__item__link--numone .image-hover {
     background-position: -908px -481px;
 }
-.clients-list__item__link--tax:hover {
+.clients-list__item__link--tax .image-hover {
     background-position: -758px -481px;
 }
 /*15. Section partners styles*/
@@ -993,10 +1026,10 @@ header .contact__item {
 }
 .partners-list__item__link {
     display: block;
-    transition: all 2s ease;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -o-transition: all 2s ease;
+      transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
     position: relative;
 }
 .partners-list__item__link:hover .empty-partners {

@@ -1,10 +1,7 @@
 $(function() {
 	
     $('.anim').show().addClass('fadeIn animated');
-
-   
-
-        /*Main slider*/
+    /*Main slider*/
     $("#slider").find(".item:gt(0)").hide();
 
     setInterval(function() { 
@@ -96,7 +93,8 @@ $(function() {
             unloadPopupBox();
         });
         
-        $('#popup_btn').on('click', function() {
+        $('#popup_btn, .footer-phone').on('click', function(e) {
+            e.preventDefault();
             loadPopupBox();
         });
 

@@ -1358,6 +1358,14 @@ header .contact__item {
     background: url(../i/markup/bg-portfolio-works.png) center center no-repeat;
     height: 415px;
     padding: 0 0 10px 0;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.portfolio-list__item:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
 }
 .portfolio-list__item:nth-child(3n) {
   margin: 0 0 20px 0;
@@ -1407,9 +1415,9 @@ header .contact__item {
 .more-link__wrap .empty {
     position: absolute;
     transition: all 3s ease;
-  -webkit-transition: all 3s ease;
-  -moz-transition: all 3s ease;
-  -o-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
     top: 0;
     left: 0;
     right: 0;
@@ -1420,7 +1428,6 @@ header .contact__item {
 }
 .more-link__wrap .more-link__text {
     position: absolute;
-
     left: 37%;
     z-index: 300;
 }

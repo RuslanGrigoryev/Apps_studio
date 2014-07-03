@@ -1213,6 +1213,33 @@ header .contact__item {
   font-size: 21px;
   border-radius: 15px;
 }
+.callback_contacts .contacts_submit {
+  background: url(../i/markup/forma_button-contacts.png) top center no-repeat;
+}
+.contacts_submit .empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  position: absolute;
+  background: url(../i/markup/forma_button-contacts.png) 0px -120px no-repeat;
+  z-index: 299;
+}
+.contacts_submit .call__btn__text {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
+}
+.contacts_submit:hover .empty {
+  opacity: 1;
+}
 /*18.portfolio-works*/
 .portfolio-works {
   margin: 35px 0 4px 0;

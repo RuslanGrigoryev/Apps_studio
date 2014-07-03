@@ -1311,12 +1311,35 @@ header .contact__item {
   margin: 0px auto;
   text-transform: uppercase;
   text-align: center;
-  background: url(../i/markup/bg-more-link.png) center center no-repeat;
+  background: url(../i/markup/bg-more-link_hover.png) -113px -2px no-repeat;
   box-sizing: border-box;
   padding: 29px 0;
   font-family: 'Myriad Pro Bold';
   color: #fff;
   font-size: 18px;
+}
+.more-link__wrap:hover .empty {
+  opacity: 1;
+}
+.more-link__wrap .empty {
+    position: absolute;
+    transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 299;
+    opacity: 0;
+    background: url(../i/markup/bg-more-link_hover.png) -114px -171px no-repeat;
+}
+.more-link__wrap .more-link__text {
+    position: absolute;
+
+    left: 37%;
+    z-index: 300;
 }
 .more-link:hover {
   text-decoration: none;

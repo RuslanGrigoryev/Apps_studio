@@ -17,13 +17,13 @@ $(function() {
     /*Slide punkts on page how_it_works_2*/
 
     var $items = $('.punkt-list__item'),
-        $links = $items.find('.punkt-list__link'),
+        $links = $items.find('.punkt-list__wrap-text'),
         $texts = $items.find('.punkt-list__item--inner');
 
     $links.on('click', function(e) {
     	e.preventDefault();
         var $this = $(this),
-            $text = $this.parent().next(),
+            $text = $this.next(),
             $parent = $this.closest('li');
     	$texts.not($text).slideUp(1000);
     	$text.stop(true, false).slideToggle(1000)

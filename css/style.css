@@ -607,7 +607,7 @@ header .contact__item {
 .how_it_work {
     padding: 0px;
 }
-.how_it_work_2 .punkt-list__link:hover {
+.punkt-list__wrap-text:hover .punkt-list__link {
   color: #9843DD;
 }
 .how_it_work_2 h1 span {
@@ -1114,6 +1114,9 @@ header .contact__item {
     height: 149px;
     margin: 20px 0 0 20px;
 }
+a.punkt-list__wrap-text:hover {
+  text-decoration: none;
+}
 .how_it_work_2 .punkt-list__wrap-text em {
     position: absolute;
     z-index: 99999;
@@ -1151,7 +1154,7 @@ header .contact__item {
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
 }
-.punkt-list__link:hover {
+.punkt-list__wrap-text:hover .punkt-list__link {
   text-decoration: none;
   background: url(../i/markup/detail-link__hover__noactive.png) 0px 10px no-repeat;
 } 

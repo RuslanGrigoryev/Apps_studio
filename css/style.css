@@ -1188,6 +1188,14 @@ header .contact__item {
     line-height: 22px;
 }
 /*17.Contacts.*/
+.wrap__input {
+  text-align: center;
+}
+.popup .callback__main {
+    width: 500px;
+    margin: -100px 0 0 -250px !important;
+    height: 200px;
+}
 .wrap-contacts-ul {
     display: inline-block;
     width: 30%;
@@ -1842,7 +1850,7 @@ footer .wrap-contact {
   z-index: 9997;
 }
 #mask {
-  background: rgba(0,0,0, 0.85);
+  background: rgba(0,0,0, 0.95);
   z-index: 9998;
 }
 .popup .callback {

@@ -118,7 +118,7 @@ $(function() {
             console.log($('#name').val() + ' --- ' + $('#mail').val());
 
             if (nameVal === '' || mailVal === '' ) {
-                $('.warning').show();
+                /*$('.warning').show();*/
                 return false;
             }
             else {

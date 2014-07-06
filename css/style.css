@@ -1883,7 +1883,30 @@ footer .wrap-contact {
 }
 .wrap-input__required {
     background: url(../i/markup/required.png) left 10px no-repeat;
-
+}
+.wrap-input__required--name, .wrap-input__required--mail, .wrap-input__required--descr {
+  position: relative;
+}
+.wrap-input__required--name span {
+  position: absolute;
+  color: #1B1A1A;
+  font-size: 0.9em;
+  top: 34px;
+  left: 250px;
+}
+.wrap-input__required--mail span {
+  position: absolute;
+  top: 34px;
+  color: #1B1A1A;
+  font-size: 0.9em;
+  left: 315px;
+}
+.wrap-input__required--descr span {
+  position: absolute;
+  color: #1B1A1A;
+  font-size: 0.9em;
+  top: 37px;
+  left: 315px;
 }
 /*25. MEDIA STYLES*/
 /* iPads (landscape) ----------- */

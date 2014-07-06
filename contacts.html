@@ -120,8 +120,14 @@
 		
 		<div class="wrap-left">
 			
-			<div class="wrap-input__required"><input type="text" placeholder="имя" id="name"></div>
-			<div class="wrap-input__required"><input type="text" placeholder="телефон/почта" id="mail"></div>
+			<div class="wrap-input__required--name">
+				<input type="text" placeholder="имя" id="name">
+				<span>(обязательно)</span>
+			</div>
+			<div class="wrap-input__required--mail">
+				<input type="text" placeholder="телефон/почта" id="mail">
+				<span>(обязательно)</span>
+			</div>
 			<input type="text" placeholder="компания/должность">
 			<input type="text" placeholder="сфера деятельности">
 			
@@ -130,8 +136,10 @@
 		<div class="wrap-right">
 			
 			<input type="text" placeholder="сайт">
-			<textarea name="tz" id="tz" cols="30" rows="7" placeholder="описание идеи"></textarea>
-			
+			<div class="wrap-input__required--descr">
+				<textarea name="tz" id="tz" cols="30" rows="7" placeholder="описание идеи"></textarea>
+				<span>(обязательно)</span>
+			</div>
 		</div>
 
 		<div class="wrap-upload-link">

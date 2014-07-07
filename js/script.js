@@ -93,9 +93,15 @@ $(function() {
             unloadPopupBox();
         });
         
-        $('#popup_btn, .footer-phone').on('click', function(e) {
+        $('#popup_btn').on('click', function(e) {
             e.preventDefault();
             loadPopupBox();
+            $('.hiddenInput').val('Center form (Main page button)');
+        });
+        $('.footer-phone').on('click', function(e) {
+            e.preventDefault();
+            loadPopupBox();
+            $('.hiddenInput').val('Footer form(bottom phone logo)');
         });
 
         function unloadPopupBox() {    // TO Unload the Popupbox
@@ -112,14 +118,13 @@ $(function() {
         }); 
 
         $('#submitBtn').on('click', function (event) {
-            event.preventDefault();
             var nameVal = $('#name').val(),
                 mailVal = $('#mail').val();
             console.log($('#name').val() + ' --- ' + $('#mail').val());
 
             if (nameVal === '' || mailVal === '' ) {
                 /*$('.warning').show();*/
-                return false;
+                
             }
             else {
                 unloadPopupBox();

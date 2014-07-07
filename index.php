@@ -1,7 +1,43 @@
-﻿<!doctype html>
+<?php
+//Если форма отправлена
+if(isset($_POST['submit'])) {
+
+	//Проверка Поля ИМЯ
+	if(trim($_POST['contactname']) == '') {
+		$hasError = true;
+	} else {
+		$name = trim($_POST['contactname']);
+	}
+
+	//Проверка поля ТЕМА
+	if(trim($_POST['email']) == '') {
+		$hasError = true;
+	} else {
+		$email = trim($_POST['email']);
+	}
+
+	if(trim($_POST['hiddenPos']) == '') {
+		$hasError = true;
+	} else {
+		$formPos = trim($_POST['hiddenPos']);
+	}
+
+	//Если ошибок нет, отправить email
+	if(!isset($hasError)) {
+		$emailTo = 'support@appsstudio.ru';
+		$body = "Имя: $name \n\nТелефон/почта: $email \n\nОткуда форма: $formPos";
+		$headers = 'From: My Site <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+
+		mail($emailTo, $email, $body, $headers);
+		$emailSent = true;
+	}
+}
+?>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="Разработка приложений, создание приложений, разработка под андроид, разработка приложений на iphone, стоимость разработки приложений, заказать разработку приложений, сколько стоит приложение, программирование под ios">	
@@ -16,7 +52,7 @@
 		<div class="wrapper top-header">
 			
 			<div class="wrap-logo" itemscope itemtype="http://schema.org/Organization">
-			    <a class="logo-link" itemprop="url" href="index.html">
+			    <a class="logo-link" itemprop="url" href="index.php">
 			        <img class="logo-img" itemprop="logo" src="i/markup/logo.png" />
 			    </a>
 			</div>
@@ -221,7 +257,7 @@
 			
 			<div class="footer-logo">
 				
-				<a class="footer-logo__link" href="index.html"><span></span></a>
+				<a class="footer-logo__link" href="index.php"><span></span></a>
 				<p class="footer-text">AppsStudio 2011 - 2014 ©</p>
 
 			</div>
@@ -253,7 +289,7 @@
 			
 
 			<div class="wrap-contact vcard">
-			  <a href="#" class="footer-phone"><span></span></a>
+			  <a href="#" class="footer-phone footer-phone__bottom"><span></span></a>
 			  <span class="contact__item phone"></span>
 			  <span class="contact__item phone"></span>
 			  <a class="contact__item email hover" href="mailto:support@appsstudio.ru">
@@ -281,13 +317,15 @@
 	</footer>
 	
 	<div class="popup">
-		
-		<form action="#" class="callback callback__main">
+		<?php if(isset($hasError)) { //Если найдены ошибки ?>
+			<p class="error">Проверьте, пожалуйста, правильность заполения всех полей.</p>
+		<?php } ?>
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="callback callback__main">
 				
-				<div class="wrap__input"><input type="text" placeholder="имя" id="name"></div>
-				<div class="wrap__input"><input type="text" placeholder="телефон/почта" id="mail"></div>
-
-			<button type="submit" id="submitBtn"><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
+				<div class="wrap__input"><input name="contactname" type="text" placeholder="имя" id="name"></div>
+				<div class="wrap__input"><input name="email" type="text" placeholder="телефон/почта" id="mail"></div>
+				<input class="hiddenInput" type="hidden" value="" name="hiddenPos">
+			<button name="submit" type="submit" id="submitBtn"><span class="empty"></span><span class="call__btn__text">заказать звонок</span></button>
 			
 		</form>
 
